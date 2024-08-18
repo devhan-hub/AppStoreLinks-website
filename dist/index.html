@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>project</title>
+    <link rel="stylesheet" href="../src/output.css">
+
+</head>
+
+<body>
+    <nav
+        class=" container mx-auto px-6   border-y-thin border-gray-300 shadow-sm md:flex md:justify-between md:shadow-none md:p-8 md:w-full ">
+        <!-- logo and button icon -->
+        <div
+            class=" flex justify-between pb-8 pt-8 border-b-thin border-gray-300  md:shadow-none md:border-none md:p-0 md:items-end">
+            <!-- logo -->
+            <img src="../img/logo.png" alt="">
+            <!-- button -->
+            <div class="w-8 h-6 relative md:hidden cursor-pointer  " id="menu_btn">
+                <span class="w-6 h-heighttin bg-black absolute top-0 left-0 translate-y-2.5"></span>
+                <span class="w-full h-heighttin bg-black absolute top-0 left-0 translate-y-5"></span>
+                <span class="w-6 h-heighttin bg-black absolute top-0 left-0 translate-y-thretee"></span>
+            </div>
+        </div>
+        <!-- main list and signup container -->
+        <div class="hidden flex-col items-center md:flex md:flex-row cursor-pointer md:space-x-8 " id="nav-sign">
+            <!-- list container -->
+            <div
+                class=" flex flex-col justify-between bg-gray-100 text-center  w-full md:flex-row md:p-0 md:space-x-8 md:bg-transparent ">
+                <a class="py-3.5 pno-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent "
+                    href="#">Home</a>
+                <a class="py-3.5 no-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                    href="#">Services</a>
+                <a class="py-3.5 no-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                    href="#">About</a>
+                <a class="py-3.5 no-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                    href="#">Pricing</a>
+                <a class="py-3.5 no-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                    href="#">Newsletter</a>
+            </div>
+            <a id="signin-btn"
+                class="px-3 py-4 text-center  rounded-full bg-gray-100 text-white  font-bold  hover:bg-gray-200 cursor-pointer md:w-1/2 md:px-3 md:py-2 md:mx-0 md:bg-gradient-to-l from-blueIshSup to-blueIshLight">
+                <i class="fa-solid fa-arrow-right-from-bracket font-extrabold "></i>
+                Sign In Now
+            </a>
+        </div>
+    </nav>
+    <!-- preview box -->
+    <div id="modal"
+        class="absolute left-0 right-0 top-0  h-screen bg-black bg-opacity-60 flex justify-center items-center text-center hidden">
+>
+        <div id="homecontact" class="modal-form h-80 mx-auto space-y-4 bg-white  ">
+
+            <div class=" w-full flex justify-between  bg-[#f4f4f4] shadow-md">
+                <h4 class="font-bold py-2.5 pl-4 inline-block">LOGIN</h4>
+                <i class="modal-close fas fa-times py-3.5 px-4  bg-blueIsh text-white cursor-pointer "></i>
+            </div>
+            <!-- all container -->
+            <div class="pt-2 px-4 space-y-3 ">
+                <a href="#" class="space-x-2 bg-[#f4f4f4] cursor-pointer px-2 py-2.5 flex items-center hover:bg-[#eee]">
+                    <i class=" fab fa-facebook p-2.5 bg-[#3b5998]  text-white"></i>
+                    <p class="text-black text-opacity-50 text-[1.02rem] font-bold">Connect with Facebook</p>
+                </a>
+                <a href="#"
+                    class="space-x-2  py-2.5 px-2.5 cursor-pointer bg-[#f4f4f4] flex items-center hover:bg-[#eee]">
+                    <i class=" fab fa-google-plus p-2.5 bg-red-500  text-white"></i>
+                    <p class="text-black text-opacity-50 text-[1.0r2em] font-bold">Connect with Google</p>
+                </a>
+                <div class="py-3.5 text-gray-400 font-medium">
+                    <p>Or Use Your Email Address</p>
+                </div>
+                <div class="space-x-2">
+                    <a id="home-login-btn" href=""
+                        class="px-14 py-3 bg-blueIsh transition duration-300 text-white rounded-md font-semibold hover:bg-[#eee] hover:text-black hover:shadow-sm">Login</a>
+                    <a id="home-signup-btn" href=""
+                        class="px-10 py-3 bg-blueIsh transition duration-300 text-white font-semibold rounded-md hover:bg-[#eee] hover:text-black  hover:shadow-sm">Sign
+                        up</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="sign-up" class=" modal-form h-[90vh] bg-white mx-auto  hidden">
+            <div class=" w-full  flex items-center bg-[#f4f4f4] shadow-md">
+                <h4 class="font-bold text-base py-2.5 pl-4">REGISTER</h4>
+                <i
+                    class="modal-close fas fa-times ml-auto h-full py-3.5 px-4 font-extrabold bg-blueIsh text-white cursor-pointer "></i>
+            </div>
+            <!-- padding sign up -->
+            <form class="pb-10 px-6 space-y-4 mt-6">
+                <div class="space-y-2 text-start">
+                    <label class="text-gray-400  " for="">Full Name</label>
+                    <input class="border-thin block w-full py-2.5" type="text">
+                </div>
+                <div class="space-y-2 text-start">
+                    <label class=" text-gray-400 " for="">Email Address</label>
+                    <input class="border-thin block w-full py-2.5" type="text">
+                </div>
+                <div class="space-y-2 text-start">
+                    <label class=" text-gray-400 " for="">Password</label>
+                    <input class="border-thin block w-full py-2.5" type="text">
+                </div>
+                <div class="gap-2 flex items-center">
+                    <input class="w-6 h-6" type="checkbox">
+                    <label class=" text-gray-400 " for="">Send me occasional email updates</label>
+                </div>
+            </form>
+            <div class="space-x-2">
+                <a id="back-signup" href=""
+                    class="px-10 py-3 bg-blueIsh transition duration-300 text-white rounded-md font-semibold hover:bg-[#eee] hover:text-black hover:shadow-sm">
+                    <i class="fa fa-angle-double-left"></i>
+                    Back</a>
+                <a href="#"
+                    class="px-10 py-3 bg-blueIsh transition duration-300 text-white font-semibold hover:bg-[#eee] hover:text-black rounded-md hover:shadow-sm">Register
+                </a>
+            </div>
+
+        </div>
+
+        <div id="login" class="modal-form bg-white  w-[340px] space-y-8 hidden">
+            <div class=" w-full  flex items-center bg-[#f4f4f4] shadow-md">
+                <h4 class="font-bold text-base py-2.5 pl-4">LOGIN</h4>
+                <i
+                    class="modal-close fas fa-times ml-auto h-full py-3.5 px-4 font-extrabold bg-blueIsh text-white cursor-pointer "></i>
+            </div>
+            <div class="content space-y-8 pl-5 pr-6 pb-4">
+                <form class=" space-y-6 ">
+
+                    <div class="space-y-2  text-start">
+                        <label class=" text-gray-400 " for="">Email / Username</label>
+                        <input class="border-thin block w-[90%] py-2.5" type="text">
+                    </div>
+                    <div class="space-y-2 text-start">
+                        <label class=" text-gray-400 " for="">Password</label>
+                        <input class="border-thin block w-[90%] py-2.5" type="password">
+                    </div>
+                    <div class=" flex items-center space-x-2">
+                        <input class="w-6 h-6" type="checkbox">
+                        <label class=" text-gray-400  " for="">Remember me on this computer</label>
+                    </div>
+                </form>
+
+                <div class="space-x-2 ">
+                    <a id="back-login" href=""
+                        class="px-12 py-3 bg-blueIsh transition duration-300 text-white rounded-md font-semibold hover:bg-[#eee] hover:text-black hover:shadow-sm">
+                        <i class="fa fa-angle-double-left"></i>
+                        Back</a>
+                    <a href="#"
+                        class="px-11 py-3 bg-blueIsh transition duration-300 text-white font-semibold hover:bg-[#eee] hover:text-black rounded-md hover:shadow-sm">Login
+                    </a>
+                </div>
+                <a class="text-blueIsh block text-[1rem] text-start font-medium hover:text-blue-700 " href="#">Forgot
+                    password ?</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
