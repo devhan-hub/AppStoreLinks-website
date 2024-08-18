@@ -590,6 +590,10 @@ video {
   position: relative;
 }
 
+.-top-28 {
+  top: -7rem;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -598,132 +602,12 @@ video {
   right: 0px;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.-top-3 {
-  top: -0.75rem;
-}
-
-.top-7 {
-  top: 1.75rem;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.left-1 {
-  left: 0.25rem;
-}
-
-.-left-3\.5 {
-  left: -0.875rem;
-}
-
-.-left-\[30px\] {
-  left: -30px;
-}
-
-.-left-\[70px\] {
-  left: -70px;
-}
-
-.right-10 {
-  right: 2.5rem;
-}
-
-.right-36 {
-  right: 9rem;
-}
-
-.right-20 {
-  right: 5rem;
-}
-
 .right-2 {
   right: 0.5rem;
 }
 
-.-top-10 {
-  top: -2.5rem;
-}
-
-.-top-8 {
-  top: -2rem;
-}
-
-.-top-4 {
-  top: -1rem;
-}
-
-.-top-2 {
-  top: -0.5rem;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
-.top-1 {
-  top: 0.25rem;
-}
-
-.-top-1 {
-  top: -0.25rem;
-}
-
-.-top-1\.5 {
-  top: -0.375rem;
-}
-
-.bottom-10 {
-  bottom: 2.5rem;
-}
-
-.bottom-2 {
-  bottom: 0.5rem;
-}
-
-.-bottom-4 {
-  bottom: -1rem;
-}
-
-.-bottom-1 {
-  bottom: -0.25rem;
-}
-
-.-bottom-0\.5 {
-  bottom: -0.125rem;
-}
-
-.-top-20 {
-  top: -5rem;
-}
-
-.-top-40 {
-  top: -10rem;
-}
-
-.-top-36 {
-  top: -9rem;
-}
-
-.-top-32 {
-  top: -8rem;
-}
-
-.-top-28 {
-  top: -7rem;
-}
-
-.z-20 {
-  z-index: 20;
+.top-0 {
+  top: 0px;
 }
 
 .-z-10 {
@@ -732,14 +616,6 @@ video {
 
 .-z-20 {
   z-index: -20;
-}
-
-.-z-30 {
-  z-index: -30;
-}
-
-.z-0 {
-  z-index: 0;
 }
 
 .mx-2 {
@@ -760,36 +636,12 @@ video {
   margin-left: auto;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mt-10 {
   margin-top: 2.5rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
-}
-
-.mt-0 {
-  margin-top: 0px;
-}
-
-.mt-40 {
-  margin-top: 10rem;
-}
-
-.-mt-10 {
-  margin-top: -2.5rem;
-}
-
-.-mt-40 {
-  margin-top: -10rem;
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .block {
@@ -820,6 +672,10 @@ video {
   height: 90vh;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-full {
   height: 100%;
 }
@@ -830,26 +686,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-lvh {
-  height: 100lvh;
-}
-
-.h-auto {
-  height: auto;
-}
-
-.max-h-full {
-  max-height: 100%;
-}
-
-.max-h-lvh {
-  max-height: 100lvh;
-}
-
-.max-h-dvh {
-  max-height: 100dvh;
 }
 
 .w-6 {
@@ -876,48 +712,16 @@ video {
   width: 100vw;
 }
 
-.w-\[500px\] {
-  width: 500px;
-}
-
-.w-\[800px\] {
-  width: 800px;
-}
-
-.w-lvw {
-  width: 100lvw;
-}
-
 .max-w-500px {
   max-width: 500px;
 }
 
-.max-w-xl {
-  max-width: 36rem;
-}
-
-.max-w-5xl {
-  max-width: 64rem;
-}
-
-.max-w-4xl {
-  max-width: 56rem;
-}
-
-.max-w-lg {
-  max-width: 32rem;
-}
-
-.max-w-2xl {
-  max-width: 42rem;
-}
-
-.max-w-3xl {
-  max-width: 48rem;
-}
-
 .max-w-6xl {
   max-width: 72rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .translate-y-2\.5 {
@@ -1098,14 +902,6 @@ video {
   --tw-bg-opacity: 0.6;
 }
 
-.bg-\[url\(\'\.\.\/img\/services-right-dec\.png\'\)\] {
-  background-image: url('../img/services-right-dec.png');
-}
-
-.bg-\[url\(\.\.\/img\/services-right-dec\.png\)\] {
-  background-image: url(../img/services-right-dec.png);
-}
-
 .from-blueIshSup {
   --tw-gradient-from: rgba(40,225,253,1) var(--tw-gradient-from-position);
   --tw-gradient-to: rgba(40, 225, 253, 0) var(--tw-gradient-to-position);
@@ -1118,18 +914,6 @@ video {
 
 .bg-contain {
   background-size: contain;
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-left {
-  background-position: left;
-}
-
-.bg-right {
-  background-position: right;
 }
 
 .bg-no-repeat {
@@ -1242,6 +1026,10 @@ video {
   padding-right: 1.5rem;
 }
 
+.pt-16 {
+  padding-top: 4rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -1254,36 +1042,12 @@ video {
   padding-top: 2rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
-}
-
 .text-center {
   text-align: center;
 }
 
 .text-start {
   text-align: start;
-}
-
-.align-top {
-  vertical-align: top;
-}
-
-.align-bottom {
-  vertical-align: bottom;
 }
 
 .text-3xl {
@@ -1592,10 +1356,6 @@ video {
 
   .lg\:bg-\[url\(\'\.\.\/img\/slider-left-dec\.png\'\)\] {
     background-image: url('../img/slider-left-dec.png');
-  }
-
-  .lg\:bg-\[url\(\.\.\/img\/services-right-dec\.png\)\] {
-    background-image: url(../img/services-right-dec.png);
   }
 
   .lg\:px-28 {
