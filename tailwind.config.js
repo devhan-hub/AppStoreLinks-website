@@ -7,6 +7,7 @@ module.exports = {
        md:'785px',
        lg:'1010px',
        xl:'1200px',
+       
      },
     extend: {
       borderRadius:{
@@ -30,11 +31,18 @@ module.exports = {
          boxShadow:{
           boxshadow: '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) inset ',
          },
+         screens:{
+          mdet:'600px',
+         },
          
        colors: {
       blueIsh:'#4b8ef1',
       blueIshLight:'rgba(91,104,235,1)',
       blueIshSup:'rgba(40,225,253,1)',
+  },
+
+  backgroundImage:{
+    'footer':'url(../img/footer-bg.png)',
   },
 },
   },
