@@ -816,6 +816,22 @@ video {
   animation: homediv 2s ease both;
 }
 
+@keyframes service {
+  0% {
+    top: -1000px;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.animate-service {
+  animation: service 2s ease both;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }

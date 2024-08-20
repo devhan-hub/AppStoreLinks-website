@@ -42,7 +42,8 @@ module.exports = {
   },
   animation:{
      homediv:'homediv 2s ease both',
-     home:'home 2s ease both', 
+     home:'home 1s ease both', 
+     service:'service 2s ease both'
    
   },
   
@@ -55,6 +56,11 @@ module.exports = {
       '0%':{right:'-1000px',opacity:'0'},
       '100%':{right:'0px', opacity:'1'},
    },
+
+   service:{
+    '0%':{top:'-1000px',opacity:'0'},
+    '100%':{top:'0px', opacity:'1'},
+ },
     
   },
 
