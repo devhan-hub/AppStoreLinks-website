@@ -42,17 +42,19 @@ module.exports = {
   },
   animation:{
      homediv:'homediv 2s ease both',
-    
-     
+     home:'home 2s ease both', 
+   
   },
-
   
   keyframes:{
-     homediv : {
-        '0%':{left:'-1000px'},
-        '100%':{left:'0px'},
+     homediv:{
+        '0%':{left:'-1000px', opacity:'0'},
+        '100%':{left:'0px' , opacity:'1'},
      },
-
+     home:{
+      '0%':{right:'-1000px',opacity:'0'},
+      '100%':{right:'0px', opacity:'1'},
+   },
     
   },
 

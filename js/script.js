@@ -57,6 +57,29 @@ document.querySelector('#signin-btn').addEventListener('click' , () => {
                 }
             });
 
+ 
+            
+
+
+
+
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const content = document.getElementById('image');
+              
+                const observer = new IntersectionObserver((entries, observer) => {
+                  entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                      entry.target.classList.add('animate-home');
+                      observer.unobserve(entry.target);
+                    }
+                  });
+                }, { threshold:0.25 });
+              
+                observer.observe(content);
+              });
+              
+
      
 
         

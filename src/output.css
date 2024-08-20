@@ -803,10 +803,12 @@ video {
 @keyframes homediv {
   0% {
     left: -1000px;
+    opacity: 0;
   }
 
   100% {
     left: 0px;
+    opacity: 1;
   }
 }
 
@@ -1389,6 +1391,10 @@ video {
   text-decoration-line: none;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .opacity-45 {
   opacity: 0.45;
 }
@@ -1795,3 +1801,6 @@ video {
     max-width: 100%;
   }
 }
+
+
+ 
