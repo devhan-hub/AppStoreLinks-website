@@ -40,6 +40,22 @@ module.exports = {
       blueIshLight:'rgba(91,104,235,1)',
       blueIshSup:'rgba(40,225,253,1)',
   },
+  animation:{
+     homediv:'homediv 2s ease both',
+    
+     
+  },
+
+  
+  keyframes:{
+     homediv : {
+        '0%':{left:'-1000px'},
+        '100%':{left:'0px'},
+     },
+
+    
+  },
+
 
   backgroundImage:{
     'footer':'url(../img/footer-bg.png)',

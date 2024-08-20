@@ -785,14 +785,6 @@ video {
   max-width: 36rem;
 }
 
-.max-w-700px {
-  max-width: 700px;
-}
-
-.basis-60 {
-  flex-basis: 15rem;
-}
-
 .translate-y-2\.5 {
   --tw-translate-y: 0.625rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -806,6 +798,20 @@ video {
 .translate-y-thretee {
   --tw-translate-y: 30px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes homediv {
+  0% {
+    left: -1000px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+.animate-homediv {
+  animation: homediv 2s ease both;
 }
 
 .cursor-pointer {
@@ -895,12 +901,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(3rem * var(--tw-space-y-reverse));
-}
-
-.space-y-14 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1381,6 +1381,10 @@ video {
   --tw-text-opacity: 0.5;
 }
 
+.text-opacity-80 {
+  --tw-text-opacity: 0.8;
+}
+
 .no-underline {
   text-decoration-line: none;
 }
@@ -1391,12 +1395,6 @@ video {
 
 .opacity-50 {
   opacity: 0.5;
-}
-
-.shadow-2xl {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-boxshadow {
@@ -1508,10 +1506,6 @@ video {
   .mdet\:items-center {
     align-items: center;
   }
-
-  .mdet\:justify-center {
-    justify-content: center;
-  }
 }
 
 @media (min-width: 785px) {
@@ -1585,10 +1579,6 @@ video {
     justify-content: space-between;
   }
 
-  .md\:gap-2 {
-    gap: 0.5rem;
-  }
-
   .md\:gap-0 {
     gap: 0px;
   }
@@ -1648,14 +1638,6 @@ video {
   .md\:py-2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-  }
-
-  .md\:pt-20 {
-    padding-top: 5rem;
-  }
-
-  .md\:pt-40 {
-    padding-top: 10rem;
   }
 
   .md\:pt-60 {
