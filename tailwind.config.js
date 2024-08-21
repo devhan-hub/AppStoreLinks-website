@@ -45,6 +45,8 @@ module.exports = {
      home:'home 2s ease both', 
      service:'service 2s ease both',
      hover:'hover .2s ease-out both',
+     navstart:'service 1.5s ease both',
+    opacity:'opacity .3s ese both',
    
   },
   
@@ -67,12 +69,23 @@ module.exports = {
      '0%':{backgroundPosition:'left bottom'},
      '100%':{backgroundPosition:'right top'},
  },
+     navstart:{
+      '0%':{top:'-1000px',opacity:'0'},
+      '100%':{top:'0px', opacity:'1'},
+     },
+     opacity:{
+      '0%':{opacity:'0'},
+      '100%':{ opacity:'1'},
+     },
     
   },
 
-
+    translate:{
+      'mytranslation':'translateY:(50%) ,translate(50%) ',
+    },
   backgroundImage:{
     'footer':'url(../img/footer-bg.png)',
+    'service':'url(../img/service-icon-01.png)',
   },
 },
   },

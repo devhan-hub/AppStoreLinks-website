@@ -1,10 +1,75 @@
+window.addEventListener('scroll', function () {
+  const header = document.querySelector('nav');
+   const logo =document.querySelector('#logo');
+  if (window.scrollY > 250) {
+      header.classList.add('bg-white');
+      header.classList.remove('absolute')
+      header.classList.add('fixed');
+      header.classList.add('shadow-boxshadow');
+      logo.classList.add('p-6');
+      logo.classList.remove('p-8');
+  } else {
+      header.classList.remove('bg-white');
+      header.classList.remove('fixed')
+      header.classList.add('absolute');
+      logo.classList.remove('p-6');
+      logo.classList.add('p-8');
+  }
+});
 
+//  for menu
 const menu = document.querySelector('#menu_btn');
 const nav = document.querySelector('#nav-sign');
+const topbar =document.querySelector('#top-bar');
+const midbr = document.querySelector('#mid-bar');
+const botbar = document.querySelector('#bot-bar');
   menu.addEventListener('click' , () => {
-        
+        menu.classList.toggle('right-2')
        nav.classList.toggle('hidden');
+       topbar.classList.toggle('w-full');
+       topbar.classList.toggle('rotate-45');
+       topbar.classList.toggle('translate-x-2');
+       topbar.classList.toggle('translate-y-2.5');
+       midbr.classList.toggle('opacity-0');
+       botbar.classList.toggle('w-full');
+       botbar.classList.toggle('-rotate-45');
+       botbar.classList.toggle('translate-x-2');
+       botbar.classList.toggle('-translate-y-2');
+
   });
+
+  // for active
+
+  let sections = document.querySelectorAll("section");
+  let navlinks = document.querySelectorAll("#nav-sign #navigation a");
+
+  window.onscroll = () => {
+      let top = window.scrollY;
+
+      sections.forEach(sec => {
+          let offset = sec.offsetTop - 150;
+          let height = sec.offsetHeight;
+          let id = sec.getAttribute('id');
+
+          if (top >= offset && top < offset + height) {
+              navlinks.forEach(link => {
+                  link.classList.remove('text-blueIsh');
+                  if (link.getAttribute('href').includes(id)) {
+                      link.classList.add('text-blueIsh');
+                  }
+              });
+          }
+      });
+  };
+  navlinks.forEach(link => {
+    link.addEventListener('click', () => {
+        // Close the dropdown menu
+        navSign.classList.add('hidden'); // Hides the menu
+        // menuBtn.classList.remove('open');
+    })
+    });
+
+  // modal
 
 const prev = document.querySelector('#modal');
 // const signinbtn
@@ -74,7 +139,7 @@ document.querySelector('#signin-btn').addEventListener('click' , () => {
                       observer.unobserve(entry.target);
                     }
                   });
-                }, { threshold:0.25 });
+                }, { threshold:0 });
               
                 observer.observe(content);
               });
@@ -89,7 +154,7 @@ document.querySelector('#signin-btn').addEventListener('click' , () => {
                       observer.unobserve(entry.target);
                     }
                   });
-                }, { threshold:0.25 });
+                }, { threshold:0 });
               
                 observer.observe(contentser);
               });

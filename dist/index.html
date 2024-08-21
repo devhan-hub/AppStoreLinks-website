@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth ">
 
 <head>
     <meta charset="UTF-8">
@@ -15,45 +15,54 @@
 
 <body>
     <nav
-        class="absolute left-0 right-0 top-0 container mx-auto px-6   border-y-thin border-gray-300 shadow-sm md:flex md:justify-between md:shadow-none md:p-8 md:w-full ">
+        class="absolute h-max left-0 animate-navstart bg-white right-0 top-0 px-6 shadow-boxshadow md:shadow-none border-b-thin border-black border-opacity-25 z-40  flex items-center ">
         <!-- logo and button icon -->
         <div
-            class=" flex justify-between pb-8 pt-8 border-b-thin border-gray-300  md:shadow-none md:border-none md:p-0 md:items-end">
-            <!-- logo -->
-            <img src="../img/logo.png" alt="">
-            <!-- button -->
-            <div class="w-8 h-6 relative md:hidden cursor-pointer  " id="menu_btn">
-                <span class="w-6 h-heighttin bg-black absolute top-0 left-0 translate-y-2.5"></span>
-                <span class="w-full h-heighttin bg-black absolute top-0 left-0 translate-y-5"></span>
-                <span class="w-6 h-heighttin bg-black absolute top-0 left-0 translate-y-thretee"></span>
+            class="mx-auto max-w-500px w-full  md:max-w-3xl lg:max-w-1000px xl:max-w-full md:flex md:justify-between md:items-center md:p-8">
+            <div class=" flex justify-between p-8  md:shadow-none md:border-none md:p-0 md:items-end" id="logo">
+                <!-- logo -->
+                <img src="../img/logo.png" alt="">
+                <!-- button -->
+                <div class="w-8 h-8 relative md:hidden cursor-pointer top-2.5 transition-transform " id="menu_btn">
+
+                    <span id="top-bar"
+                        class="w-6 h-heighttin bg-black absolute top-0  transition-transform duration-500"></span>
+                    <span id="mid-bar"
+                        class="w-full h-heighttin  bg-black absolute top-[10px] transition-opacity duration-500  "></span>
+                    <span id="bot-bar"
+                        class="w-6 h-heighttin bg-black absolute top-[20px] transition-transform duration-500"></span>
+                </div>
             </div>
-        </div>
-        <!-- main list and signup container -->
-        <div class="hidden flex-col items-center md:flex md:flex-row cursor-pointer md:space-x-8 " id="nav-sign">
-            <!-- list container -->
-            <div
-                class=" flex flex-col justify-between bg-gray-100 text-center  w-full md:flex-row md:p-0 md:space-x-8 md:bg-transparent ">
-                <a class="py-3.5 pno-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent "
-                    href="#">Home</a>
-                <a class="py-3.5 no-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
-                    href="#">Services</a>
-                <a class="py-3.5 no-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
-                    href="#">About</a>
-                <a class="py-3.5 no-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
-                    href="#">Pricing</a>
-                <a class="py-3.5 no-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
-                    href="#">Newsletter</a>
+            <!-- main list and signup container -->
+            <div class="hidden flex-col  items-center t md:flex border-t-thin border-black border-opacity-25 md:border-none md:flex-row cursor-pointer md:space-x-6  xl:space-x-14 "
+                id="nav-sign">
+                <!-- list container -->
+                <div class=" flex flex-col justify-between  text-center bg-gray-100 w-full md:flex-row md:p-0 md:space-x-6 md:bg-transparent xl:space-x-10 "
+                    id="navigation">
+                    <a class="py-3.5 pno-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent "
+                        href="#home">Home</a>
+                    <a class="py-3.5 no-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                        href="#services">Services</a>
+                    <a class="py-3.5 no-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                        href="#about">About</a>
+                    <a class="py-3.5 no-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                        href="#pricing">Pricing</a>
+                    <a class="py-3.5 no-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                        href="#newsletter">Newsletter</a>
+                </div>
+
+                <a id="signin-btn"
+                    class=" py-3 text-center  text-black rounded-full bg-gray-100 transition-all  font-semibold hover:text-white hover:bg-gray-200 group-hover:text-blueIsh cursor-pointer md:w-1/2 md:px-4 md:py-2 md:mx-0 md:bg-gradient-to-l from-blueIshSup to-blueIshLight mx-auto block w-40 md:text-white">
+                    <i class="fa-solid fa-arrow-right-from-bracket font-extrabold "></i>
+                    Sign in Now
+                </a>
+
             </div>
-            <a id="signin-btn"
-                class="px-3 py-4 text-center  rounded-full bg-gray-100 text-white  font-bold  hover:bg-gray-200 cursor-pointer md:w-1/2 md:px-3 md:py-2 md:mx-0 md:bg-gradient-to-l from-blueIshSup to-blueIshLight">
-                <i class="fa-solid fa-arrow-right-from-bracket font-extrabold "></i>
-                Sign In Now
-            </a>
         </div>
     </nav>
     <!-- preview box -->
     <div id="modal"
-        class="absolute left-0 right-0 top-0  h-screen bg-black bg-opacity-60 flex justify-center items-center text-center hidden">
+        class="fixed left-0 right-0 top-0  h-screen bg-black bg-opacity-60 flex justify-center items-center text-center hidden z-50">
         >
         <div id="homecontact" class="modal-form h-80 mx-auto space-y-4 bg-white  ">
 
@@ -165,9 +174,11 @@
       text-center lg:flex-row lg:bg-[url('../img/slider-left-dec.png')] bg-contain bg-no-repeat -z-20 lg:px-28 lg:pb-40 lg:text-start lg:size-fit">
         <!--  first box -->
         <div class="space-y-6  max-w-xl  md:max-w-3xl relative animate-homediv">
-            <h1 class="text-[50px] text-black text-opacity-80 font-bold leading-snug mb-0">Get The Latest App From App Stores</h1>
+            <h1 class="text-[50px] text-black text-opacity-80 font-bold leading-snug mb-0">Get The Latest App From App
+                Stores</h1>
 
-            <p class="text-gray-400 px-4 lg:text-black leading-8 font-semibold text-[15px]">Chain App Dev is an app landing
+            <p class="text-gray-400 px-4 lg:text-black leading-8 font-semibold text-[15px]">Chain App Dev is an app
+                landing
                 page HTML5 template based on Bootstrap v5.1.3 CSS layout provided by TemplateMo, a great websith e to
                 download free CSS templates.</p>
             <div class="space-x-4 pt-8">
@@ -182,54 +193,62 @@
             </div>
         </div>
 
-        <div  class="relative opacity-0" id="image">
-            <img src="../img/slider-dec (1).png" alt=""  class="w-screen" >
+        <div class="relative   " id="image">
+            <img src="../img/slider-dec (1).png" alt="" class="w-screen">
         </div>
 
 
     </section>
-    <section id="service" class="p-6 pt-16 px-4 space-y-20 relative overflow-hidden mt-10 ">
+    <section id="services" class="p-6 pt-16 px-5 space-y-20 relative overflow-hidden mt-10  lg:px-8 xl:px-16">
         <img class="absolute  right-2 top-0 max-w-6xl h-auto -z-10 " src="../img/services-right-dec.png" alt="">
 
-        <div class="text-center space-y-4 max-w-xl mx-auto relative opacity-0  " id="service-animate">
-            <h2 class="text-3xl font-bold">Amazing <span class="text-blueIsh">Services & Features</span> for you</h2>
+        <div class="text-center  space-y-4 max-w-xl mx-auto relative" id="service-animate">
+            <h2 class="text-3xl capitalize font-bold">Amazing <span class="text-blueIsh">Services & Features</span> for
+                you</h2>
             <img class="mx-auto" src="../img/heading-line-dec.png" alt="">
-            <p class="text-gray-400 leading-8 px-14">If you need the greatest collection of HTML templates for your
+            <p class="text-black text-opacity-30 leading-8 px-16">If you need the greatest collection of HTML templates
+                for your
                 business, please
                 visit <a class="text-blueIsh" href="#">TooCSS</a> Blog. If you need to have a contact form PHP script,
-                go to <a class="text-blueIsh" href="#">our contact</a> page for more
+                go to <a class="text-blueIsh" href="#">our contact page</a> for more
                 information.</p>
         </div>
 
         <div
-            class="flex flex-col w-full gap-8 max-w-500px lg:max-w-1000px  md:max-w-700px lg:flex-row mx-auto lg:items-start">
-            <!-- each box -->
+            class="flex flex-col w-full gap-8 mx-auto lg:flex-row   max-w-500px md:max-w-700px lg:max-w-1000px lg:gap-6 xl:max-w-6xl">
+            <!-- box-1 -->
+            <div
+                class="space-y-2 px-7 py-8 cursor-pointer group shadow-boxshadow rounded-tr-20rem rounded-xl bg-cover bg-no-repeat bg-right-top hover:bg-[url('../img/service-bg.jpg')] lg:w-1/4 lg:hover:animate-hover md:space-y-8 lg:self-start ">
 
-            <div class="p-8 shadow-boxshadow rounded-xl bg-cover bg-no-repeat bg-right-top cursor-pointer group hover:bg-[url('../img/service-bg.jpg')] space-y-8 rounded-tr-20rem lg:w-1/4 lg:hover:animate-hover " >
 
-                <img class="ml-auto md:mx-auto lg:mx-0 group-hover:text-white" src="../img/service-icon-01.png" alt="">
-
-                <div class="space-y-6 text-center lg:text-start ">
-                    <h3 class="font-bold text-xl group-hover:text-white ">App Maintenance</h3>
-                    <p class="text-black text-opacity-35 leading-8 group-hover:text-white">You are not allowed to redistribute this template
+                <div
+                    class="bg-[url('../img/service-icon-01.png')] bg-no-repeat bg-contain bg-right-top h-12  transition-all md:bg-center lg:bg-left-top group-hover:sepia-[5000]  ">
+                </div>
+                <div class="space-y-2 text-center lg:text-start ">
+                    <h3 class="font-bold text-xl group-hover:text-white transition-all ">App Maintenance</h3>
+                    <p class="text-black text-opacity-35 leading-8 pb-4 group-hover:text-white">You are not allowed to
+                        redistribute this template
                         ZIP file on
                         any other website</p>
                     <a href="#"
-                        class="text-blue-700 space-x-2 transition-all ease-in-out  hover:space-x-3 flex items-center justify-center group-hover:text-white ">
+                        class="text-blue-700 space-x-2  transition-all ease-in-out  hover:space-x-3 flex items-center justify-center group-hover:text-white ">
                         <p>Read More</p>
-                        <i class="fa fa-arrow-right " aria-hidden="true"></i>
+                        <i class="fa fa-arrow-right  " aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
+            <!-- box-2 -->
+            <div
+                class="space-y-2 px-7 py-8 cursor-pointer group shadow-boxshadow rounded-tr-20rem rounded-xl bg-cover bg-no-repeat bg-right-top hover:bg-[url('../img/service-bg.jpg')] lg:w-1/4 lg:hover:animate-hover md:space-y-8 ">
 
-
-            <div class="p-8  shadow-boxshadow rounded-xl space-y-8 rounded-tr-20rem lg:w-1/4  bg-cover bg-no-repeat bg-right-top cursor-pointer group hover:bg-[url('../img/service-bg.jpg')] lg:hover:animate-hover  ">
-
-                <img class="ml-auto md:mx-auto lg:mx-0 " src="../img/service-icon-02.png" alt="">
-
-                <div class="space-y-6 text-center lg:text-start">
-                    <h3 class="font-bold text-xl group-hover:text-white">Rocket Speed of App</h3>
-                    <p class="text-black text-opacity-35 leading-8 group-hover:text-white ">You are allowed to use the Chain App Dev HTML
+                <div
+                    class="bg-[url('../img/service-icon-02.png')] bg-no-repeat bg-contain bg-right-top h-12  transition-all md:bg-center lg:bg-left-top   group-hover:sepia-[5000]">
+                </div>
+                <div class="space-y-2 text-center lg:text-start ">
+                    <h3 class="font-bold text-xl group-hover:text-white transition-all">Rocket Speed of App</h3>
+                    <p class="text-black text-opacity-35 leading-8 group-hover:text-white pb-4 ">You are allowed to use
+                        the
+                        Chain App Dev HTML
                         template. Feel free to modify or edit this layout.</p>
                     <a href="#"
                         class="text-blue-700 space-x-2 transition-all ease-in-out  hover:space-x-3 flex items-center justify-center group-hover:text-white">
@@ -238,15 +257,18 @@
                     </a>
                 </div>
             </div>
+            <!--  box-3  -->
+            <div
+                class="space-y-2 px-7 py-8 cursor-pointer group shadow-boxshadow rounded-tr-20rem rounded-xl bg-cover bg-no-repeat bg-right-top hover:bg-[url('../img/service-bg.jpg')] lg:w-1/4 lg:hover:animate-hover  md:space-y-8">
 
+                <div
+                    class="bg-[url('../img/service-icon-03.png')] bg-no-repeat bg-contain bg-right-top h-12  transition-all md:bg-center lg:bg-left-top   group-hover:sepia-[5000]">
+                </div>
 
-            <div class="p-8  shadow-boxshadow rounded-xl space-y-8  rounded-tr-20rem lg:w-1/4  bg-cover bg-no-repeat bg-right-top cursor-pointer group hover:bg-[url('../img/service-bg.jpg')] lg:hover:animate-hover">
-
-                <img class="ml-auto md:mx-auto lg:mx-0 " src="../img/service-icon-03.png" alt="">
-
-                <div class="space-y-6 text-center lg:text-start">
-                    <h3 class="font-bold text-xl  group-hover:text-white">Multi Workflow Idea</h3>
-                    <p class="text-black text-opacity-35 group-hover:text-white leading-8">If this template is beneficial for your work,
+                <div class="space-y-2 text-center lg:text-start">
+                    <h3 class="font-bold text-xl  group-hover:text-white transition-all">Multi Workflow Idea</h3>
+                    <p class="text-black text-opacity-35 group-hover:text-white pb-4 leading-8">If this template is
+                        beneficial for your work,
                         please support us a little via PayPal. Thank you</p>
                     <a href="#"
                         class="text-blue-700 space-x-2 transition-all ease-in-out  hover:space-x-3 flex items-center group-hover:text-white justify-center">
@@ -256,14 +278,18 @@
                 </div>
             </div>
 
+                     <!-- box-4 -->
+            <div
+            class="space-y-2 px-7 lg:px-6 py-8 cursor-pointer group shadow-boxshadow rounded-tr-20rem rounded-xl bg-cover bg-no-repeat bg-right-top hover:bg-[url('../img/service-bg.jpg')] lg:w-1/4 lg:hover:animate-hover  md:space-y-8  group-hover:sepia-[5000]">
 
-            <div class="p-8 px-5  shadow-boxshadow rounded-xl space-y-8 rounded-tr-20rem lg:w-1/4  bg-cover bg-no-repeat bg-right-top cursor-pointer group hover:bg-[url('../img/service-bg.jpg')] lg:hover:animate-hover">
+            <div
+                class="bg-[url('../img/service-icon-04.png')] bg-no-repeat bg-contain bg-right-top h-12  transition-all md:bg-center lg:bg-left-top group-hover:bg-none ">
+            </div>
 
-                <img class="ml-auto md:mx-auto lg:mx-0 " src="../img/service-icon-04.png" alt="">
-
-                <div class="space-y-6 text-center lg:text-start ">
-                    <h3 class="font-bold text-xl group-hover:text-white">24/7 Help & Support</h3>
-                    <p class="text-black text-opacity-35 leading-8 group-hover:text-white">Lorem ipsum dolor consectetur adipiscing elit
+                <div class="space-y-2 text-center lg:text-start ">
+                    <h3 class="font-bold text-xl group-hover:text-white transition-all">24/7 Help & Support</h3>
+                    <p class="text-black text-opacity-35 leading-8 pb-4 group-hover:text-white">Lorem ipsum dolor consectetur
+                        adipiscing elit
                         sedder williamsburg photo booth quinoa and fashion axe.</p>
                     <a href="#"
                         class="text-blue-700 space-x-2 transition-all ease-in-out  hover:space-x-3 flex items-center justify-center group-hover:text-white ">
@@ -493,7 +519,7 @@
 
     </section>
 
-    <section id="price" class="space-y-20 container mx-auto px-6 py-40">
+    <section id="pricing" class="space-y-20 container mx-auto px-6 py-40">
         <!-- header -->
         <div class="text-center space-y-6 ">
             <h2 class="text-3xl font-bold">We Have The Best Pre-Order <span class="text-blueIsh">Prices</span> You Can
@@ -594,26 +620,30 @@
 
     </section>
 
-    <footer class="px-4 py-8  space-y-20 bg-footer  bg-no-repeat bg-cover bg-center ">
-      
+    <section id="newsletter" class="px-4 py-8  space-y-20 bg-footer  bg-no-repeat bg-cover bg-center ">
+
 
         <div class="text-center mx-auto space-y-12 max-w-500px md:max-w-700px md:pt-60">
             <h2 class="text-3xl font-bold capitalize leading-relaxed  mx-auto px-10 md:text-white ">
                 Join our mailing list to receive the news & latest trends</h2>
-           
-            <form action="" class=" flex flex-col gap-4 mdet:items-center mdet:flex-row md:max-w-700px mx-auto  ">
-              
-                <input class="mdet:w-1/2  outline-none block shadow-boxshadow rounded-full px-6 py-3 md:border-b-thin md:bg-transparent md:rounded-none md:shadow-none" type="email" placeholder="Email address" class="block">
-             
 
-               <a href="" class="text-blueIsh bg-white shadow-boxshadow flex gap-2 curser-pointer  rounded-full mdet:w-1/2 px-10 py-3 items-center justify-center md:bg-transparent md:text-white md:border-thin md:hover:bg-white md:hover:text-blueIsh transition-all">
-                      <p>Subscribe Now </p>
-                      <i class="fa fa-angle-right"></i>
-               </a>
+            <form action="" class=" flex flex-col gap-4 mdet:items-center mdet:flex-row md:max-w-700px mx-auto  ">
+
+                <input
+                    class="mdet:w-1/2  outline-none block shadow-boxshadow rounded-full px-6 py-3 md:border-b-thin md:bg-transparent md:rounded-none md:shadow-none"
+                    type="email" placeholder="Email address" class="block">
+
+
+                <a href=""
+                    class="text-blueIsh bg-white shadow-boxshadow flex gap-2 curser-pointer  rounded-full mdet:w-1/2 px-10 py-3 items-center justify-center md:bg-transparent md:text-white md:border-thin md:hover:bg-white md:hover:text-blueIsh transition-all">
+                    <p>Subscribe Now </p>
+                    <i class="fa fa-angle-right"></i>
+                </a>
             </form>
         </div>
 
-        <div class="flex flex-col max-w-500px mx-auto md:max-w-700px lg:flex-row lg:max-w-1000px justify-center items-center text-white text-center gap-10 md:items-start md:gap-0 xl:max-w-full">
+        <div
+            class="flex flex-col max-w-500px mx-auto md:max-w-700px lg:flex-row lg:max-w-1000px justify-center items-center text-white text-center gap-10 md:items-start md:gap-0 xl:max-w-full">
 
             <!-- contact box -->
             <div class="space-y-4 flex flex-col mb-10 md:items-start md:mb-2 lg:w-1/4">
@@ -624,49 +654,51 @@
             </div>
 
             <!-- about as -->
-                <div class="space-y-4 w-1/4">
+            <div class="space-y-4 w-1/4">
                 <h2 class="text-xl font-bold mb-2 md:text-start ">About Us</h2>
                 <div class="gap-x-20 gap-y-3  flex flex-col flex-wrap md:h-[180px] md:items-start lg:gap-x-0 ">
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#">About</a>
-                <a href="#">Testimonials</a>
-                <a href="#">Pricing</a>
-                <a href="#">About</a>
-                <a href="#">Testimonials</a>
-                <a href="#">Pricing</a>
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">About</a>
+                    <a href="#">Testimonials</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">About</a>
+                    <a href="#">Testimonials</a>
+                    <a href="#">Pricing</a>
+                </div>
             </div>
-        </div>
 
             <!-- usefull link -->
-               <div class="space-y-4 lg:w-1/4">
+            <div class="space-y-4 lg:w-1/4">
                 <h2 class="text-xl font-bold mb-2 md:text-start">Useful Links</h2>
                 <div class="gap-x-20 gap-y-3 flex flex-col flex-wrap md:h-[200px] md:items-start lg:gap-x-0">
-                <a href="#">Free Apps</a>
-                <a href="#">App Engine</a>
-                <a href="#">Programming</a>
-                <a href="#">Development</a>
-                <a href="#">App News</a>
-                <a href="#">App Dev Team</a>
-                <a href="#">Digital Web</a>
-                <a href="#">Normal Apps</a>
+                    <a href="#">Free Apps</a>
+                    <a href="#">App Engine</a>
+                    <a href="#">Programming</a>
+                    <a href="#">Development</a>
+                    <a href="#">App News</a>
+                    <a href="#">App Dev Team</a>
+                    <a href="#">Digital Web</a>
+                    <a href="#">Normal Apps</a>
+                </div>
             </div>
-        </div>
 
             <!-- about our company -->
 
             <div class="flex flex-col justify-center items-center gap-6 md:items-start lg:w-1/4">
                 <h2 class=" text-xl mb-2">About Our Company</h2>
                 <img class="invert-[0.6] " src="../img/logo.png" alt="" class="text-color">
-                <p class="text-center leading-8 md:text-start ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                <p class="text-center leading-8 md:text-start ">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore
                     et dolore.</p>
             </div>
 
         </div>
 
-        <p class="text-center text-white mt-20 max-w-500px mx-auto leading-8">Copyright © 2022 Chain App Dev Company. All Rights Reserved. Design: TemplateMo</p>
+        <p class="text-center text-white mt-20 max-w-500px mx-auto leading-8">Copyright © 2022 Chain App Dev Company.
+            All Rights Reserved. Design: TemplateMo</p>
 
-    </footer>
+    </section>
 
     <script src="../js/script.js"></script>
 </body>
