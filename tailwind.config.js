@@ -29,7 +29,7 @@ module.exports = {
           '500px':'500px',
          },
          boxShadow:{
-          boxshadow: '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) inset ',
+          boxshadow: '0 0 15px rgba(0,0,0,0.1)',
          },
          screens:{
           mdet:'600px',
@@ -42,8 +42,9 @@ module.exports = {
   },
   animation:{
      homediv:'homediv 2s ease both',
-     home:'home 1s ease both', 
-     service:'service 2s ease both'
+     home:'home 2s ease both', 
+     service:'service 2s ease both',
+     hover:'hover .2s ease-out both',
    
   },
   
@@ -60,6 +61,11 @@ module.exports = {
    service:{
     '0%':{top:'-1000px',opacity:'0'},
     '100%':{top:'0px', opacity:'1'},
+ },
+
+ hover:{
+     '0%':{backgroundPosition:'left bottom'},
+     '100%':{backgroundPosition:'right top'},
  },
     
   },
