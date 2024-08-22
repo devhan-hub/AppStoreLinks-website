@@ -47,6 +47,7 @@ module.exports = {
      hover:'hover .2s ease-out both',
      navstart:'service 1.5s ease both',
     opacity:'opacity .3s ese both',
+    secondboxopacity:'secondboxopacity 1s ease both',
    
   },
   
@@ -76,6 +77,10 @@ module.exports = {
      opacity:{
       '0%':{opacity:'0'},
       '100%':{ opacity:'1'},
+     },
+     secondboxopacity:{
+         '0%':{opacity:'0' , left:'-60px'},
+      '100%':{ opacity:'1' ,left:'0px'},
      },
     
   },

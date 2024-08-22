@@ -159,18 +159,42 @@ document.querySelector('#signin-btn').addEventListener('click' , () => {
                 observer.observe(contentser);
               });
 
+            
+              const btnlist = document.querySelectorAll(".inside");
+              const secbox = document.querySelector('#cliant .second-box');
+              let lastcliked =null;
+
+              btnlist.forEach(btnEL => {
+                  btnEL.addEventListener('click', () => {
+                    
+                 if( btnEL !== lastcliked){
+                    secbox.classList.remove('animate-secondboxopacity'); 
+                    void secbox.offsetWidth; 
+                    secbox.classList.add('animate-secondboxopacity'); 
+                 }
+                      
+                     
+                      btnlist.forEach(box => {
+                          const head = box.querySelector('.head');
+                          const star = box.querySelector('.star');
+
+                          head.classList.remove('text-blueIsh');
+                          star.classList.remove('text-blueIsh');
+                          head.classList.add('text-opacity-80');
+                          star.classList.add('text-opacity-30');
+
+                      });
               
-              
+                      const head = btnEL.querySelector('.head');
+                      const star = btnEL.querySelector('.star');
+                      head.classList.add('text-blueIsh');
+                      star.classList.add('text-blueIsh');
+                      head.classList.remove('text-opacity-80');
+                      star.classList.remove('text-opacity-30');
 
-     
-
-        
-
-     
-
-        
-     
-              
-
+                     lastcliked =btnEL;
+                  });
+              });
 
 
+             
