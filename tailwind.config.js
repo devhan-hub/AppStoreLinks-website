@@ -50,6 +50,10 @@ module.exports = {
     secondboxopacity:'secondboxopacity 1s ease both',
    
   },
+
+  transitionProperty:{
+     height:'height',
+  },
   
   keyframes:{
      homediv:{

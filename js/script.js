@@ -5,36 +5,73 @@ window.addEventListener('scroll', function () {
       header.classList.add('bg-white');
       header.classList.remove('absolute')
       header.classList.add('fixed');
+      
       header.classList.add('shadow-boxshadow');
       logo.classList.add('p-6');
       logo.classList.remove('p-8');
+      header.classList.remove('border-b-thin')
   } else {
       header.classList.remove('bg-white');
       header.classList.remove('fixed')
       header.classList.add('absolute');
       logo.classList.remove('p-6');
       logo.classList.add('p-8');
+      header.classList.add('border-b-thin')
   }
 });
 
 //  for menu
+const headertra = document.querySelector('nav');
 const menu = document.querySelector('#menu_btn');
 const nav = document.querySelector('#nav-sign');
 const topbar =document.querySelector('#top-bar');
 const midbr = document.querySelector('#mid-bar');
 const botbar = document.querySelector('#bot-bar');
   menu.addEventListener('click' , () => {
-        menu.classList.toggle('right-2')
-       nav.classList.toggle('hidden');
-       topbar.classList.toggle('w-full');
-       topbar.classList.toggle('rotate-45');
-       topbar.classList.toggle('translate-x-2');
-       topbar.classList.toggle('translate-y-2.5');
-       midbr.classList.toggle('opacity-0');
-       botbar.classList.toggle('w-full');
-       botbar.classList.toggle('-rotate-45');
-       botbar.classList.toggle('translate-x-2');
-       botbar.classList.toggle('-translate-y-2');
+
+        if(nav.classList.contains('hidden')) {
+          menu.classList.add('right-2');
+          nav.classList.remove('hidden');
+          nav.classList.add('flex');
+          topbar.classList.remove('w-6');
+          topbar.classList.add('w-full');
+          topbar.classList.add('rotate-45');
+          topbar.classList.add('translate-x-2');
+          topbar.classList.add('translate-y-2.5');
+          midbr.classList.add('opacity-0');
+          midbr.classList.remove('opacity-1');
+          midbr.classList.add('hidden');
+          botbar.classList.add('w-full');
+          botbar.classList.remove('w-6');
+          botbar.classList.add('-rotate-45');
+          botbar.classList.add('translate-x-2');
+          botbar.classList.add('-translate-y-2');
+          headertra.classList.remove('h-28');
+          headertra.classList.add('h-58');
+        }
+
+        else {
+          menu.classList.remove('right-2');
+          nav.classList.add('hidden');
+          nav.classList.remove('flex');
+          topbar.classList.add('w-6');
+          topbar.classList.remove('w-full');
+          topbar.classList.remove('rotate-45');
+          topbar.classList.remove('translate-x-2');
+          topbar.classList.remove('translate-y-2.5');
+          midbr.classList.remove('opacity-0');
+          midbr.classList.remove('opacity-1');
+          midbr.classList.remove('hidden');
+          botbar.classList.remove('w-full');
+          botbar.classList.add('w-6');
+          botbar.classList.remove('-rotate-45');
+          botbar.classList.remove('translate-x-2');
+          botbar.classList.remove('-translate-y-2');
+          headertra.classList.add('h-28');
+          headertra.classList.remove('h-58');
+        }
+     
+      
 
   });
 
@@ -42,7 +79,8 @@ const botbar = document.querySelector('#bot-bar');
 
   let sections = document.querySelectorAll("section");
   let navlinks = document.querySelectorAll("#nav-sign #navigation a");
-
+  const headertran = document.querySelector('nav');
+  const navtr = document.querySelector('#nav-sign');
   window.onscroll = () => {
       let top = window.scrollY;
 
@@ -55,19 +93,36 @@ const botbar = document.querySelector('#bot-bar');
               navlinks.forEach(link => {
                   link.classList.remove('text-blueIsh');
                   if (link.getAttribute('href').includes(id)) {
-                      link.classList.add('text-blueIsh');
+                      // link.classList.add('text-blueIsh');
+                      // nav.classList.add('hidden');
+                      // nav.classList.remove('flex');
+                      // headertra.classList.add('h-28');
+                      // headertra.classList.remove('h-58');
+                      menu.classList.remove('right-2');
+                      nav.classList.add('hidden');
+                      nav.classList.remove('flex');
+                      topbar.classList.add('w-6');
+                      topbar.classList.remove('w-full');
+                      topbar.classList.remove('rotate-45');
+                      topbar.classList.remove('translate-x-2');
+                      topbar.classList.remove('translate-y-2.5');
+                      midbr.classList.remove('opacity-0');
+                      midbr.classList.remove('opacity-1');
+                      midbr.classList.remove('hidden');
+                      botbar.classList.remove('w-full');
+                      botbar.classList.add('w-6');
+                      botbar.classList.remove('-rotate-45');
+                      botbar.classList.remove('translate-x-2');
+                      botbar.classList.remove('-translate-y-2');
+                      headertra.classList.add('h-28');
+                      headertra.classList.remove('h-58');
+
                   }
               });
           }
       });
   };
-  navlinks.forEach(link => {
-    link.addEventListener('click', () => {
-        // Close the dropdown menu
-        navSign.classList.add('hidden'); // Hides the menu
-        // menuBtn.classList.remove('open');
-    })
-    });
+
 
   // modal
 
@@ -121,13 +176,6 @@ document.querySelector('#signin-btn').addEventListener('click' , () => {
                     prev.classList.add('hidden');
                 }
             });
-
- 
-            
-
-
-
-
 
             document.addEventListener('DOMContentLoaded', function() {
                 const content = document.getElementById('image');

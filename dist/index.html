@@ -9,13 +9,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>project</title>
     <link rel="stylesheet" href="../src/output.css">
-
-
 </head>
 
 <body>
     <nav
-        class="absolute h-max left-0 animate-navstart bg-white right-0 top-0 px-6 shadow-boxshadow md:shadow-none border-b-thin border-black border-opacity-25 z-40  flex items-center ">
+        class="absolute h-28 duration-1000 left-0 animate-navstart bg-white right-0 top-0 px-6 shadow-boxshadow md:shadow-none border-b-thin border-black border-opacity-25 z-40  flex items-center transition-height ease-in">
         <!-- logo and button icon -->
         <div
             class="mx-auto max-w-500px w-full  md:max-w-3xl lg:max-w-1000px xl:max-w-full md:flex md:justify-between md:items-center md:p-8">
@@ -26,15 +24,15 @@
                 <div class="w-8 h-8 relative md:hidden cursor-pointer top-2.5 transition-transform " id="menu_btn">
 
                     <span id="top-bar"
-                        class="w-6 h-heighttin bg-black absolute top-0  transition-transform duration-500"></span>
+                        class="w-6 h-heighttin bg-black absolute top-0  transition-transform duration-500 "></span>
                     <span id="mid-bar"
-                        class="w-full h-heighttin  bg-black absolute top-[10px] transition-opacity duration-500  "></span>
+                        class="w-full h-heighttin  bg-black absolute top-[10px] opacity-100 transition-opacity duration-500  "></span>
                     <span id="bot-bar"
                         class="w-6 h-heighttin bg-black absolute top-[20px] transition-transform duration-500"></span>
                 </div>
             </div>
             <!-- main list and signup container -->
-            <div class="hidden flex-col  items-center t md:flex border-t-thin border-black border-opacity-25 md:border-none md:flex-row cursor-pointer md:space-x-6  xl:space-x-14 "
+            <div class="hidden flex-col  items-center bg-white md:flex border-t-thin border-black border-opacity-25 md:border-none md:flex-row cursor-pointer md:space-x-6  xl:space-x-14 "
                 id="nav-sign">
                 <!-- list container -->
                 <div class=" flex flex-col justify-between  text-center bg-gray-100 w-full md:flex-row md:p-0 md:space-x-6 md:bg-transparent xl:space-x-10 "
@@ -188,13 +186,13 @@
                 </a>
                 <a href="#" class="px-5 py-2.5 font-semibold  space-x-1 text-white bg-blueIsh rounded-full">
                     <span>Free Quote</span>
-                    <i class="fab fa-video"></i>
+                    <i class="fab fa-google-play"></i>
                 </a>
             </div>
         </div>
 
-        <div class="relative   " id="image">
-            <img src="../img/slider-dec (1).png" alt="" class="w-screen">
+        <div class="relative  " id="image">
+            <img src="../img/slider-dec (1).png" alt="" class="lg:w-screen w-[500px] mx-auto">
         </div>
 
 
@@ -202,7 +200,7 @@
     <section id="services" class="p-6 pt-16 px-5 space-y-20 relative overflow-hidden mt-10  lg:px-8 xl:px-16">
         <img class="absolute  right-2 top-0 max-w-6xl h-auto -z-10 " src="../img/services-right-dec.png" alt="">
 
-        <div class="text-center  space-y-4 max-w-xl mx-auto relative" id="service-animate">
+        <div class="text-center  space-y-4 max-w-xl mx-auto relative " id="service-animate">
             <h2 class="text-3xl capitalize font-bold">Amazing <span class="text-blueIsh">Services & Features</span> for
                 you</h2>
             <img class="mx-auto" src="../img/heading-line-dec.png" alt="">
@@ -483,7 +481,7 @@
             </div>
 
             <div class="flex items-center gap-3 md:self-start md:text-start">
-                <img src="../img/client-image.jpg" class="rounded-full " alt="">
+                <img src="../img/hijab.webp" class="rounded-full w-40" alt="">
                 <div class="space-y-2">
                     <h4 class="font-bold text-lg ">David Martino</h4>
                     <p>CEO of David Company</p>
@@ -529,7 +527,7 @@
                 </div>
 
                 <div
-                class="px-4 py-2.5 border-thin border-blueIsh  text-blueIsh transition-all rounded-full cursor-pointer hover:bg-blueIsh hover:text-white duration-500">
+                class="px-4 py-2.5 border-thin border-blueIsh z-20 text-blueIsh transition-all rounded-full cursor-pointer hover:bg-blueIsh hover:text-white duration-500">
                 <a href="#" class="">Purchase This Plane Now</a>
             </div>
                 <img src="../img/regular-table-bottom.png" alt="" class="bottom-0 right-0 absolute">
@@ -555,7 +553,7 @@
                 </div>
 
                 <div
-                    class="px-4 py-2.5 border-thin border-blueIsh text-blueIsh transition-all duration-500 rounded-full cursor-pointer hover:bg-blueIsh hover:text-white">
+                    class="px-4 py-2.5 border-thin border-blueIsh z-20 text-blueIsh transition-all duration-500 rounded-full cursor-pointer hover:bg-blueIsh hover:text-white">
                     <a href="#">Purchase This Plane Now</a>
                 </div>
                 <img src="../img/pro-table-bottom.png" alt="" class="-bottom-7 right-0 absolute">
@@ -582,15 +580,12 @@
                 </div>
 
                 <div
-                    class="px-4 py-2.5 border-thin border-blueIsh text-blueIsh transition-all  duration-500 rounded-full cursor-pointer hover:bg-blueIsh hover:text-white">
+                    class="px-4 py-2.5 border-thin border-blueIsh text-blueIsh transition-all z-20 duration-500 rounded-full cursor-pointer hover:bg-blueIsh hover:text-white">
                     <a href="#">Purchase This Plane Now</a>
                 </div>
                 <img src="../img/regular-table-bottom.png" alt="" class="bottom-0 right-0 absolute">
 
             </div>
-
-
-
         </div>
 
     </section>
