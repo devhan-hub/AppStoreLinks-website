@@ -12,51 +12,53 @@
 </head>
 
 <body>
-    <nav
-        class="absolute h-28 duration-1000 left-0 animate-navstart bg-white right-0 top-0 px-6 shadow-boxshadow md:shadow-none border-b-thin border-black border-opacity-25 z-40  flex items-center transition-height ease-in">
-        <!-- logo and button icon -->
-        <div
-            class="mx-auto max-w-500px w-full  md:max-w-3xl lg:max-w-1000px xl:max-w-full md:flex md:justify-between md:items-center md:p-8">
-            <div class=" flex justify-between p-8  md:shadow-none md:border-none md:p-0 md:items-end" id="logo">
-                <!-- logo -->
-                <img src="../img/logo.png" alt="">
-                <!-- button -->
-                <div class="w-8 h-8 relative md:hidden cursor-pointer top-2.5 transition-transform " id="menu_btn">
+    <nav class=" px-10 py-10 absolute z-50 w-full border-b-thin border-gray-300 bg-white lg:bg-transparent shadow-boxshadow md:shadow-none">
 
-                    <span id="top-bar"
-                        class="w-6 h-heighttin bg-black absolute top-0  transition-transform duration-500 "></span>
-                    <span id="mid-bar"
-                        class="w-full h-heighttin  bg-black absolute top-[10px] opacity-100 transition-opacity duration-500  "></span>
-                    <span id="bot-bar"
-                        class="w-6 h-heighttin bg-black absolute top-[20px] transition-transform duration-500"></span>
-                </div>
-            </div>
-            <!-- main list and signup container -->
-            <div class="hidden flex-col  items-center bg-white md:flex border-t-thin border-black border-opacity-25 md:border-none md:flex-row cursor-pointer md:space-x-6  xl:space-x-14 "
-                id="nav-sign">
-                <!-- list container -->
-                <div class=" flex flex-col justify-between  text-center bg-gray-100 w-full md:flex-row md:p-0 md:space-x-6 md:bg-transparent xl:space-x-10 "
-                    id="navigation">
-                    <a class="py-3.5 pno-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent "
-                        href="#home">Home</a>
-                    <a class="py-3.5 no-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
-                        href="#services">Services</a>
-                    <a class="py-3.5 no-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
-                        href="#about">About</a>
-                    <a class="py-3.5 no-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
-                        href="#pricing">Pricing</a>
-                    <a class="py-3.5 no-underline border-b-thin font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
-                        href="#newsletter">Newsletter</a>
-                </div>
+        <div id="he-nav" class="relative max-w-500px md:max-w-700px lg:max-w-1000px xl:max-w-7xl mx-auto h-8 md:h-8 md:flex justify-between items-center transition-height duration-500 ">
 
-                <a id="signin-btn"
-                    class=" py-3 text-center  text-black rounded-full bg-gray-100 transition-all  font-semibold hover:text-white hover:bg-gray-200 group-hover:text-blueIsh cursor-pointer md:w-1/2 md:px-4 md:py-2 md:mx-0 md:bg-gradient-to-l from-blueIshSup to-blueIshLight mx-auto block w-40 md:text-white">
-                    <i class="fa-solid fa-arrow-right-from-bracket font-extrabold "></i>
-                    Sign in Now
-                </a>
+       <div class="flex justify-between items-center ">
+         <a href="" class="cursor-pointer"><img src="../img/logo.png" alt=""></a>
+        <div class=" w-8 relative h-6 md:hidden cursor-pointer" id="menu_btn">
 
-            </div>
+            <span id="top-bar"
+                class="w-6 h-heighttin bg-black absolute top-0  transition-transform duration-1000 transform"></span>
+            <span id="mid-bar"
+                class="w-8 h-heighttin  bg-black absolute top-[10px] opacity-100 transition-opacity duration-500  transform "></span>
+            <span id="bot-bar"
+                class="w-6 h-heighttin bg-black absolute top-[20px] transition-transform duration-500  transform"></span>
         </div>
+    </div>
+       
+        
+        <div id="nav-sign" class="hiddene absolute md:static -mt-2 h-0 px-3  opacity-0 md:h-auto md:opacity-100 left-0 right-0 top-20  duration-[1s] md:flex space-y-3 transition-all pointer-events-none border-t-thin bg-white z-40 border-black border-opacity-25 md:border-none  gap-2 pb-2 md:pb-0  justify-center md:items-center md:justify-center shadow-boxshadow md:shadow-none md:pointer-events-auto md:gap-12 lg:gap-16">
+            <div class="flex relative flex-col  pb-6 md:pb-0 text-center md:flex-row md:justify-between md:items-center md:gap-4 lg:gap-8 bg-gray-100 md:bg-transparent"
+                id="navigation">
+                <a class="py-3.5 relative pno-underline border-b-thin group font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none  md:hover:bg-transparent "
+                    href="#home">Home<span  class="absolute hidden md:block w-0 group-hover:w-14 transition-all duration-300 h-[2px] bg-blueIsh left-0 -bottom-2"></span>
+                    </a>
+                <a class="py-3.5 relative no-underline border-b-thin group  font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                    href="#services">Service<span  class="absolute hidden md:block w-0 group-hover:w-14 transition-all duration-300 h-[2px] bg-blueIsh left-0 -bottom-2"></span>
+                </a>
+                <a class="py-3.5 relative no-underline border-b-thin group font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                    href="#about">About<span  class="absolute hidden md:block w-0 group-hover:w-14 transition-all duration-300 h-[2px]  bg-blueIsh left-0 -bottom-2"></span>
+                </a>
+                <a class="py-3.5 relative no-underline border-b-thin group font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                    href="#pricing">Pricing<span  class="absolute hidden md:block w-0 group-hover:w-14 transition-all duration-300 h-[2px] bg-blueIsh left-0 -bottom-2"></span>
+                </a>
+                <a class="py-3.5 relative no-underline border-b-thin group font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                    href="#newsletter">Newsletter<span  class="absolute hidden md:block w-0 group-hover:w-20 transition-all duration-300 h-[2px] bg-blueIsh left-0 -bottom-2"></span>
+                </a>
+            </div>
+            <a id="signin-btn"
+                class=" py-3 text-center   text-black rounded-full bg-gray-100 transition-all  font-semibold hover:text-white hover:bg-gray-200 group-hover:text-blueIsh cursor-pointer  md:px-4 md:py-2 md:mx-0 md:bg-gradient-to-l from-blueIshSup to-blueIshLight mx-auto block w-40 md:text-white">
+                <i class="fa-solid fa-arrow-right-from-bracket font-extrabold "></i>
+                Sign in Now
+            </a>
+        </div>
+        
+
+       
+    </div>
     </nav>
     <!-- preview box -->
     <div id="modal"
@@ -113,8 +115,8 @@
                     <input class="border-thin block w-full py-2.5" type="text">
                 </div>
                 <div class="gap-2 flex items-center">
-                    <input class="w-6 h-6" type="checkbox">
-                    <label class=" text-gray-400 " for="">Send me occasional email updates</label>
+                    <input class="w-6 h-6" type="checkbox" id="sendme">
+                    <label class=" text-gray-400 " for="sendme">Send me occasional email updates</label>
                 </div>
             </form>
             <div class="space-x-2">
@@ -147,8 +149,8 @@
                         <input class="border-thin block w-[90%] py-2.5" type="password">
                     </div>
                     <div class=" flex items-center space-x-2">
-                        <input class="w-6 h-6" type="checkbox">
-                        <label class=" text-gray-400  " for="">Remember me on this computer</label>
+                        <input class="w-6 h-6" type="checkbox" id="remember">
+                        <label class=" text-gray-400  " for="remember">Remember me on this computer</label>
                     </div>
                 </form>
 
@@ -191,7 +193,7 @@
             </div>
         </div>
 
-        <div class="relative  " id="image">
+        <div class="relative animate-home " id="image">
             <img src="../img/slider-dec (1).png" alt="" class="lg:w-screen w-[500px] mx-auto">
         </div>
 
@@ -200,7 +202,7 @@
     <section id="services" class="p-6 pt-16 px-5 space-y-20 relative overflow-hidden mt-10  lg:px-8 xl:px-16">
         <img class="absolute  right-2 top-0 max-w-6xl h-auto -z-10 " src="../img/services-right-dec.png" alt="">
 
-        <div class="text-center  space-y-4 max-w-xl mx-auto relative " id="service-animate">
+        <div class="text-center  space-y-4 max-w-xl mx-auto relative animate-service " id="service-animate">
             <h2 class="text-3xl capitalize font-bold">Amazing <span class="text-blueIsh">Services & Features</span> for
                 you</h2>
             <img class="mx-auto" src="../img/heading-line-dec.png" alt="">
@@ -218,9 +220,8 @@
             <div
                 class="space-y-2 px-7 py-8 cursor-pointer group shadow-boxshadow bg-white rounded-tr-20rem rounded-xl bg-cover bg-no-repeat bg-right-top hover:bg-[url('../img/service-bg.jpg')] lg:w-1/4 lg:hover:animate-hover md:space-y-8 lg:self-start ">
 
-
-                <div
-                    class="bg-[url('../img/service-icon-01.png')] bg-no-repeat bg-contain bg-right-top h-12  transition-all md:bg-center lg:bg-left-top group-hover:sepia-[5000]  ">
+                <div class="flex justify-end items-end md:justify-center md:items-center lg:inline">
+                    <i class="fas fa-cog  text-blueIsh text-5xl group-hover:text-white"></i>
                 </div>
                 <div class="space-y-2 text-center lg:text-start ">
                     <h3 class="font-bold text-xl group-hover:text-white transition-all ">App Maintenance</h3>
@@ -239,8 +240,8 @@
             <div
                 class="space-y-2 px-7 py-8 cursor-pointer group shadow-boxshadow bg-white rounded-tr-20rem rounded-xl bg-cover bg-no-repeat bg-right-top hover:bg-[url('../img/service-bg.jpg')] lg:w-1/4 lg:hover:animate-hover md:space-y-8 ">
 
-                <div
-                    class="bg-[url('../img/service-icon-02.png')] bg-no-repeat bg-contain bg-right-top h-12  transition-all md:bg-center lg:bg-left-top   group-hover:sepia-[5000]">
+                <div class="flex justify-end items-end md:justify-center md:items-center lg:inline">
+                    <i class="fas fa-laptop-code text-blueIsh text-5xl group-hover:text-white"></i>
                 </div>
                 <div class="space-y-2 text-center lg:text-start ">
                     <h3 class="font-bold text-xl group-hover:text-white transition-all">Rocket Speed of App</h3>
@@ -259,8 +260,8 @@
             <div
                 class="space-y-2 px-7 py-8 cursor-pointer group shadow-boxshadow bg-white rounded-tr-20rem rounded-xl bg-cover bg-no-repeat bg-right-top hover:bg-[url('../img/service-bg.jpg')] lg:w-1/4 lg:hover:animate-hover  md:space-y-8">
 
-                <div
-                    class="bg-[url('../img/service-icon-03.png')] bg-no-repeat bg-contain bg-right-top h-12  transition-all md:bg-center lg:bg-left-top   group-hover:sepia-[5000]">
+                <div class="flex justify-end items-end md:justify-center md:items-center lg:inline">
+                    <i class="fas fa-sitemap  text-blueIsh text-5xl group-hover:text-white"></i>
                 </div>
 
                 <div class="space-y-2 text-center lg:text-start">
@@ -276,17 +277,21 @@
                 </div>
             </div>
 
-                     <!-- box-4 -->
+            <!-- box-4 -->
             <div
-            class="space-y-2 px-7 lg:px-6 py-8 cursor-pointer group shadow-boxshadow bg-white rounded-tr-20rem rounded-xl bg-cover bg-no-repeat bg-right-top hover:bg-[url('../img/service-bg.jpg')] lg:w-1/4 lg:hover:animate-hover  md:space-y-8  group-hover:sepia-[5000]">
+                class="space-y-2 px-7 lg:px-6 py-8 cursor-pointer group shadow-boxshadow bg-white rounded-tr-20rem rounded-xl bg-cover bg-no-repeat bg-right-top hover:bg-[url('../img/service-bg.jpg')] lg:w-1/4 lg:hover:animate-hover  md:space-y-8  group-hover:sepia-[5000]">
 
-            <div
-                class="bg-[url('../img/service-icon-04.png')] bg-no-repeat bg-contain bg-right-top h-12  transition-all md:bg-center lg:bg-left-top group-hover:bg-none ">
-            </div>
+                <div class="flex justify-end items-end md:justify-center md:items-center lg:inline">
+                    <i class="fas fa-question-circle  text-blueIsh text-5xl group-hover:text-white"> <i
+                            class="fas  fa-comment relative z-10 -left-8 top-4"></i></i>
+                </div>
+                <!-- <i class="fas fa-comment"></i> -->
+
 
                 <div class="space-y-2 text-center lg:text-start ">
                     <h3 class="font-bold text-xl group-hover:text-white transition-all">24/7 Help & Support</h3>
-                    <p class="text-black text-opacity-35 leading-8 pb-4 group-hover:text-white">Lorem ipsum dolor consectetur
+                    <p class="text-black text-opacity-35 leading-8 pb-4 group-hover:text-white">Lorem ipsum dolor
+                        consectetur
                         adipiscing elit
                         sedder williamsburg photo booth quinoa and fashion axe.</p>
                     <a href="#"
@@ -300,8 +305,9 @@
 
     </section>
 
-   
-    <section id="about" class="flex flex-col gap-10  py-28 px-4  relative lg:flex-row  lg:gap-6 md:px-6  lg:bg-[url('../img/about-bg.jpg')] bg-no-repeat bg-right-bottom  max-w-xl mx-auto md:max-w-3xl  lg:max-w-5xl  xl:max-w-6xl">
+
+    <section id="about"
+        class="flex flex-col gap-10  py-28 px-4  relative lg:flex-row  lg:gap-6 md:px-6  lg:bg-[url('../img/about-bg.jpg')] bg-no-repeat bg-right-bottom  max-w-xl mx-auto md:max-w-3xl  lg:max-w-5xl  xl:max-w-6xl">
 
         <img class="absolute -left-[5%] right-10 -top-16 max-w-6xl h-auto -z-10 " src="../img/services-left-dec.png"
             alt="">
@@ -317,28 +323,34 @@
             <div
                 class="flex flex-col w-full justify-center self-end  gap-8 lg:gap-6  lg:grid lg:grid-cols-2 px-2 lg:px-0">
                 <!-- box -1 -->
-                 
+
                 <div
-                class="text-center shadow-boxshadow group lg:text-start group rounded-full py-3 w-full lg:px-4 lg:pl-8 lg:py-4 lg:rounded-45px bg-white">
-                <a href="#" class="font-bold text-xl cursor-pointer group-hover:text-blueIsh transition-all ">Maintance Problems</a>
-                <p class="text-black text-opacity-45 ">lorem Ipsum Text</p>
-            </div>
+                    class="text-center shadow-boxshadow group lg:text-start group rounded-full py-3 w-full lg:px-4 lg:pl-8 lg:py-4 lg:rounded-45px bg-white">
+                    <a href="#"
+                        class="font-bold text-xl cursor-pointer group-hover:text-blueIsh transition-all ">Maintance
+                        Problems</a>
+                    <p class="text-black text-opacity-45 ">lorem Ipsum Text</p>
+                </div>
 
                 <div
                     class="text-center shadow-boxshadow  lg:text-start rounded-full w-full group py-3 lg:px-4 lg:pl-8 lg:py-4 lg:rounded-45px bg-white ">
-                    <a href="#" class="  font-bold text-xl cursor-pointer group-hover:text-blueIsh transition-all">24/7 Support & Help</a>
+                    <a href="#" class="  font-bold text-xl cursor-pointer group-hover:text-blueIsh transition-all">24/7
+                        Support & Help</a>
                     <p class="text-black text-opacity-45">lorem Ipsum Text</p>
                 </div>
 
                 <div
                     class="text-center shadow-boxshadow  lg:text-start rounded-full w-full group py-3 lg:px-4 lg:pl-9 lg:py-4 lg:rounded-45px bg-white">
-                    <a href="#" class="font-bold text-xl cursor-pointer group-hover:text-blueIsh transition-all">Fixing Issues About</a>
+                    <a href="#" class="font-bold text-xl cursor-pointer group-hover:text-blueIsh transition-all">Fixing
+                        Issues About</a>
                     <p class="text-black text-opacity-45">lorem Ipsum Text</p>
                 </div>
 
                 <div
                     class="text-center shadow-boxshadow  lg:text-start group rounded-full w-full lg:self-start py-3 lg:px-4 lg:pl-8 lg:py-4 lg:rounded-45px bg-white">
-                    <a href="" class="bold  font-bold text-xl cursor-pointer group-hover:text-blueIsh transition-all">Co. Development</a>
+                    <a href=""
+                        class="bold  font-bold text-xl cursor-pointer group-hover:text-blueIsh transition-all">Co.
+                        Development</a>
                     <p class="text-black text-opacity-45">lorem Ipsum Text</p>
                 </div>
             </div>
@@ -360,135 +372,145 @@
 
     <section id="cliant" class="px-5 lg:px-20 py-20  space-y-24 ">
 
-        <div class="text-center space-y-6 container  mx-auto">
+        <div class="text-center space-y-6 container  max-auto mx-auto">
             <h2 class="text-3xl font-bold">Check What <span class="text-blueIsh">The Clients Say</span> About Our App
                 Dev</h2>
             <img class="mx-auto" src="../img/heading-line-dec.png" alt="">
-            <p class="text-gray-400 leading-8 px-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            <p class="text-gray-400 leading-8  w-1/2 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do
                 eismod tempor incididunt ut labore et dolore magna.</p>
         </div>
         <!-- b0th -->
-        <div class="flex flex-col gap-8 lg:flex-row justify-center text-center  max-w-500px  md:max-w-700px lg:max-w-1000px xl:max-w-full mx-auto lg:justify-between lg:gap-10 xl:gap-20">
-            
+        <div
+            class="flex flex-col gap-8 lg:flex-row justify-center text-center  max-w-500px  md:max-w-700px lg:max-w-1000px xl:max-w-full mx-auto lg:justify-between lg:gap-10 xl:gap-20">
+
             <div class="box-1 flex flex-col  gap-8  justify-center w-full lg:w-[70%] lg:self-start lg:gap-14">
 
 
-                <div class="inside flex flex-col mdet:flex-row mx-4 px-6 mdet:px-0   justify-between gap-6  cursor-pointer md:justify-center md:gap-12">
+                <div
+                    class="inside flex flex-col mdet:flex-row mx-4 px-6 mdet:px-0   justify-between gap-6  cursor-pointer md:justify-center md:gap-12">
 
                     <div class="name text-center md:text-start mdet:w-[28%] ">
-                        <p class=" font-bold text-lg text-blueIsh  head ">David Martino Co</p>
+                        <p class=" font-bold text-lg text-black text-opacity-80  head ">David Martino Co</p>
                         <p class="text-black text-opacity-50">30 November 2021</p>
                     </div>
 
                     <p class="hidden font-bold text-black text-opacity-30 md:block self-start  ">Financial Apps
                     </p>
-                        <div class=" text-center text-blueIsh  mdet:w-[25%] mdet:self-start star">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <span class="font-bold"> 4.8</span>
-                        </div>
+                    <div class=" text-center text-black text-opacity-30 mdet:w-[25%] mdet:self-start star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span class="font-bold"> 4.8</span>
+                    </div>
                 </div>
 
-                <div class="inside flex flex-col mdet:flex-row mx-4 px-6 mdet:px-0   justify-between gap-6  cursor-pointer md:justify-center md:gap-12 ">
+                <div
+                    class="inside flex flex-col mdet:flex-row mx-4 px-6 mdet:px-0   justify-between gap-6  cursor-pointer md:justify-center md:gap-12 ">
 
                     <div class="name text-center md:text-start mdet:w-[28%] ">
-                        <p class=" font-bold text-lg text-black text-opacity-80 head">David Martino Co</p>
-                        <p class="text-black text-opacity-50">30 November 2021</p>
+                        <p class=" font-bold text-lg text-black text-opacity-80 head">Jake Harris Nyo</p>
+                        <p class="text-black text-opacity-50">29 November 2021</p>
                     </div>
 
                     <p class="hidden font-bold text-black text-opacity-30 md:block self-start  ">Financial Apps
                     </p>
-                        <div class=" text-center text-black text-opacity-30 mdet:w-[25%] mdet:self-start star">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <span class="font-bold"> 4.8</span>
-                        </div>
+                    <div class=" text-center text-black text-opacity-30 mdet:w-[25%] mdet:self-start star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span class="font-bold"> 4.8</span>
+                    </div>
                 </div>
 
-                <div class="inside flex flex-col mdet:flex-row mx-4 px-6 mdet:px-0   justify-between gap-6  cursor-pointer md:justify-center md:gap-12">
+                <div
+                    class="inside flex flex-col mdet:flex-row mx-4 px-6 mdet:px-0   justify-between gap-6  cursor-pointer md:justify-center md:gap-12">
 
                     <div class="name text-center md:text-start mdet:w-[28%] ">
-                        <p class=" font-bold text-lg text-black text-opacity-80 head">David Martino Co</p>
-                        <p class="text-black text-opacity-50">30 November 2021</p>
+                        <p class=" font-bold text-lg text-black text-opacity-80 head">May Catherina</p>
+                        <p class="text-black text-opacity-50">27 November 2021</p>
                     </div>
 
                     <p class="hidden font-bold text-black text-opacity-30 md:block self-start  ">Financial Apps
                     </p>
-                        <div class=" text-center text-black text-opacity-30 mdet:w-[25%] mdet:self-start star ">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <span class="font-bold"> 4.8</span>
-                        </div>
+                    <div class=" text-center text-black text-opacity-30 mdet:w-[25%] mdet:self-start star ">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span class="font-bold"> 4.8</span>
+                    </div>
                 </div>
 
-                <div class="inside flex flex-col mdet:flex-row mx-4 px-6 mdet:px-0   justify-between gap-6  cursor-pointer md:justify-center md:gap-12">
+                <div
+                    class="inside flex flex-col mdet:flex-row mx-4 px-6 mdet:px-0   justify-between gap-6  cursor-pointer md:justify-center md:gap-12">
 
                     <div class="name text-center md:text-start mdet:w-[28%] ">
-                        <p class=" font-bold text-lg text-black text-opacity-80 head">David Martino Co</p>
-                        <p class="text-black text-opacity-50">30 November 2021</p>
+                        <p class=" font-bold text-lg text-black text-opacity-80 head">Random User</p>
+                        <p class="text-black text-opacity-50">24 November 2021</p>
                     </div>
 
                     <p class="hidden font-bold text-black text-opacity-30 md:block self-start  ">Financial Apps
                     </p>
-                        <div class=" text-center text-black text-opacity-30 mdet:w-[25%] mdet:self-start star">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <span class="font-bold"> 4.8</span>
-                        </div>
+                    <div class=" text-center text-black text-opacity-30 mdet:w-[25%] mdet:self-start star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span class="font-bold"> 4.8</span>
+                    </div>
                 </div>
 
-                <div class="inside flex flex-col mdet:flex-row mx-4 px-6 mdet:px-0   justify-between gap-6  cursor-pointer md:justify-center md:gap-12">
+                <div
+                    class="inside flex flex-col mdet:flex-row mx-4 px-6 mdet:px-0   justify-between gap-6  cursor-pointer md:justify-center md:gap-12">
 
                     <div class="name text-center md:text-start mdet:w-[28%] ">
-                        <p class=" font-bold text-lg text-black text-opacity-80 head">David Martino Co</p>
-                        <p class="text-black text-opacity-50">30 November 2021</p>
+                        <p class=" font-bold text-lg text-black text-opacity-80 head">Mark Amber Do</p>
+                        <p class="text-black text-opacity-50">21 November 2021</p>
                     </div>
 
-                    <p class="hidden font-bold text-black text-opacity-30 md:block self-start lg:justify-center lg:gap-12 ">Financial Apps
+                    <p
+                        class="hidden font-bold text-black text-opacity-30 md:block self-start lg:justify-center lg:gap-12 ">
+                        Financial Apps
                     </p>
-                        <div class=" text-center text-black text-opacity-30 mdet:w-[25%] mdet:self-start star ">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <span class="font-bold"> 4.8</span>
-                        </div>
+                    <div class=" text-center text-black text-opacity-30 mdet:w-[25%] mdet:self-start star ">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span class="font-bold"> 4.8</span>
+                    </div>
                 </div>
 
-            
 
-        </div>
-        <div class="second-box relative flex flex-col justify-center items-center gap-8 lg:w-1/2  ">
+
+            </div>
             <div
-                class="text-start  space-y-8 py-14 px-8 shadow-boxshadow rounded-20rem bg-[url('../img/client-bg.png')] text-white bg-cover ">
-                <img src="../img/quote.png" alt="">
-                <p class="font-bold leading-7 italic"><q>Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed
-                        do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit
-                        amet, consectetur picing elit massive big blasta</q></p>
-            </div>
-
-            <div class="flex items-center gap-3 md:self-start md:text-start">
-                <img src="../img/hijab.webp" class="rounded-full w-40" alt="">
-                <div class="space-y-2">
-                    <h4 class="font-bold text-lg ">David Martino</h4>
-                    <p>CEO of David Company</p>
+                class="second-box relative flex flex-col justify-center items-center gap-8 lg:w-1/2 animate-secondboxopacity ">
+                <div
+                    class="text-start  space-y-8 py-14 px-8 shadow-boxshadow rounded-20rem bg-[url('../img/client-bg.png')] text-white bg-cover ">
+                    <img src="../img/quote.png" alt="">
+                    <p class="font-bold leading-7 italic"><q>Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed
+                            do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan lorem ipsum dolor sit
+                            amet, consectetur picing elit massive big blasta</q></p>
                 </div>
-            </div>
 
-        </div>
+                <div class="flex items-center gap-3 md:self-start md:text-start">
+                    <img src="../img/hijab.webp" class="rounded-full w-40" alt="">
+                    <div class="space-y-2">
+                        <h4 class="font-bold text-lg ">David Martino</h4>
+                        <p>CEO of David Company</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
 
@@ -501,12 +523,14 @@
             <h2 class="text-3xl font-bold">We Have The Best Pre-Order <span class="text-blueIsh">Prices</span> You Can
                 Get</h2>
             <img class="mx-auto" src="../img/heading-line-dec.png" alt="">
-            <p class="text-black text-opacity-30 leading-7 px-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            <p class="text-black text-opacity-30 leading-7  w-1/2 mx-auto">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do
                 eismod tempor incididunt ut labore et dolore magna.</p>
         </div>
         <!-- all box container -->
 
-        <div class="max-w-500px md:max-w-700px lg:max-w-1000px xl:max-w-6xl mx-auto flex flex-col lg:flex-row gap-6 justify-between  items-center">
+        <div
+            class="max-w-500px md:max-w-700px lg:max-w-1000px xl:max-w-6xl mx-auto flex flex-col lg:flex-row gap-6 justify-between  items-center">
 
             <!-- each box -->
             <div
@@ -527,13 +551,13 @@
                 </div>
 
                 <div
-                class="px-4 py-2.5 border-thin border-blueIsh z-20 text-blueIsh transition-all rounded-full cursor-pointer hover:bg-blueIsh hover:text-white duration-500">
-                <a href="#" class="">Purchase This Plane Now</a>
-            </div>
+                    class="px-4 py-2.5 border-thin border-blueIsh z-20 text-blueIsh transition-all rounded-full cursor-pointer hover:bg-blueIsh hover:text-white duration-500">
+                    <a href="#" class="">Purchase This Plane Now</a>
+                </div>
                 <img src="../img/regular-table-bottom.png" alt="" class="bottom-0 right-0 absolute">
 
             </div>
-          
+
             <div
                 class="min-h-screen flex flex-col gap-8 shadow-boxshadow rounded-20rem justify-center lg:w-1/3 w-full items-center relative overflow-hidden py-28">
                 <img src="../img/pro-table-top.png" alt="" class="-left-2 top-0 absolute">
@@ -597,15 +621,16 @@
             <h2 class="text-3xl font-bold capitalize leading-relaxed  mx-auto px-10 md:text-white ">
                 Join our mailing list to receive the news & latest trends</h2>
 
-            <form action="" class=" flex flex-col gap-4 mdet:items-center mdet:flex-row md:max-w-700px lg:max-w-500px mx-auto  ">
+            <form action=""
+                class=" flex flex-col gap-4 mdet:items-center mdet:flex-row md:max-w-700px lg:max-w-500px mx-auto  ">
 
                 <input
-                    class="mdet:w-1/2  placeholder-black md:placeholder-white outline-none block  shadow-boxshadow rounded-full px-6 md:px-0 py-3 md:border-b-thin md:bg-transparent md:rounded-none md:shadow-none"
+                    class="mdet:w-1/2 text-black text-opacity-40 placeholder-black md:placeholder-white outline-none block lg:text-white shadow-boxshadow rounded-full px-6 md:px-0 py-3 md:border-b-thin md:bg-transparent md:rounded-none md:shadow-none"
                     type="email" placeholder="Email Address..." class="block">
 
 
                 <a href=""
-                    class="text-blueIsh bg-white w flex gap-1 curser-pointer  rounded-full mdet:w-1/2 px-10 py-3 items-center justify-center md:bg-transparent md:text-white md:border-thin md:hover:bg-white md:hover:text-blueIsh transition-all">
+                    class="text-blueIsh bg-white w flex gap-1 curser-pointer  rounded-full mdet:w-1/2 px-10 py-3 items-center justify-center md:bg-transparent md:text-white md:border-thin md:hover:bg-white md:hover:text-blueIsh transition-all duration-500">
                     <p>Subscribe Now </p>
                     <i class="fa fa-angle-right"></i>
                 </a>
@@ -657,7 +682,7 @@
 
             <div class="flex flex-col justify-center items-center gap-4 md:items-start lg:w-1/4">
                 <h2 class=" text-xl mb-2 font-bold">About Our Company</h2>
-                <img class="invert-[0.6] " src="../img/logo.png" alt="" class="text-color">
+                <img class=" " src="../img/white-logo.png" alt="" class="">
                 <p class="text-center leading-8 md:text-start ">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore
                     et dolore.</p>
