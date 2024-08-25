@@ -12,9 +12,9 @@
 </head>
 
 <body>
-    <nav class=" px-10 py-10 absolute z-50 w-full border-b-thin border-gray-300 bg-white lg:bg-transparent shadow-boxshadow md:shadow-none">
+    <!-- <nav class=" px-10 py-10 absolute z-50 w-full border-b-thin border-gray-300 bg-white lg:bg-transparent shadow-boxshadow md:shadow-none">
 
-        <div id="he-nav" class="relative max-w-500px md:max-w-700px lg:max-w-1000px xl:max-w-7xl mx-auto h-8 md:h-8 md:flex justify-between items-center transition-height duration-500 ">
+        <div id="he-nav" class="relative max-w-500px md:max-w-700px lg:max-w-1000px xl:max-w-7xl mx-auto  h-[400px] md:h-8 md:flex justify-between items-center transition-all duration-1000 ">
 
        <div class="flex justify-between items-center ">
          <a href="" class="cursor-pointer"><img src="../img/logo.png" alt=""></a>
@@ -30,7 +30,7 @@
     </div>
        
         
-        <div id="nav-sign" class="hiddene absolute md:static -mt-2 h-0 px-3  opacity-0 md:h-auto md:opacity-100 left-0 right-0 top-20  duration-[1s] md:flex space-y-3 transition-all pointer-events-none border-t-thin bg-white z-40 border-black border-opacity-25 md:border-none  gap-2 pb-2 md:pb-0  justify-center md:items-center md:justify-center shadow-boxshadow md:shadow-none md:pointer-events-auto md:gap-12 lg:gap-16">
+        <div id="nav-sign" class="hiddene absolute md:static -mt-2  px-3   md:h-auto  left-0 right-0 top-[-1000px] transition-all mdet:top-10  duration-[1s] md:flex space-y-3  pointer-events-none border-t-thin  z-40 border-black border-opacity-25 md:border-none  gap-2 pb-2 md:pb-0  justify-center md:items-center md:justify-center  md:shadow-none md:pointer-events-auto md:gap-12 lg:gap-16">
             <div class="flex relative flex-col  pb-6 md:pb-0 text-center md:flex-row md:justify-between md:items-center md:gap-4 lg:gap-8 bg-gray-100 md:bg-transparent"
                 id="navigation">
                 <a class="py-3.5 relative pno-underline border-b-thin group font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none  md:hover:bg-transparent "
@@ -59,7 +59,114 @@
 
        
     </div>
-    </nav>
+    </nav> -->
+
+    <!-- <header class=" bg-white z-50 py-8 md:py-4 shadow-boxshadow border-b-thin border-gray-300 px-8 md:px-0  md:shadow-none lg:bg-transparent absolute w-full ">
+        <nav class="flex justify-between items-center w-[92%] mx-auto relative">
+            <div class=""><img src="../img/logo.png" alt="">
+            </div>
+
+            <div id="nav-sign" class="hiddene flex flex-col z-50 justify-between md:flex-row gap-6  md:gap-8items-center md:static md:min-h-fit absolute min-h-[60vh] left-0 right-0 top-[-1000px] w-full bg-white md:bg-transparent shadow-boxshadow md:shadow-none md:w-auto duration-500 ">
+                <ul class="flex md:flex-row flex-col w-full bg-gray-100 md:bg-transparent md:items-center md:gap-[0vh] justify-between text-center">
+                    <a class="py-3.5 relative pno-underline border-b-thin group font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none  md:hover:bg-transparent "
+                            href="#home">Home<span
+                                class="absolute hidden md:block w-0 group-hover:w-14 transition-all duration-300 h-[2px] bg-blueIsh left-0 -bottom-2"></span>
+                        </a>
+                 
+                 
+                        <a class="py-3.5 relative no-underline border-b-thin group  font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                            href="#services">Service<span
+                                class="absolute hidden md:block w-0 group-hover:w-14 transition-all duration-300 h-[2px] bg-blueIsh left-0 -bottom-2"></span>
+                        </a>
+                   
+                        <a class="py-3.5 relative no-underline border-b-thin group font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                            href="#about">About<span
+                                class="absolute hidden md:block w-0 group-hover:w-14 transition-all duration-300 h-[2px]  bg-blueIsh left-0 -bottom-2"></span>
+                        </a>
+                    
+                        <a class="py-3.5 relative no-underline border-b-thin group font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                            href="#pricing">Pricing<span
+                                class="absolute hidden md:block w-0 group-hover:w-14 transition-all duration-300 h-[2px] bg-blueIsh left-0 -bottom-2"></span>
+                        </a>
+                    
+                         <a class="py-3.5 relative no-underline border-b-thin group font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                            href="#newsletter">Newsletter<span
+                                class="absolute hidden md:block w-0 group-hover:w-20 transition-all duration-300 h-[2px] bg-blueIsh left-0 -bottom-2"></span>
+                        </a>
+                   
+                </ul>
+                <a id="signin-btn"
+                class=" py-3 text-center   text-black rounded-full bg-gray-100 transition-all  font-semibold hover:text-white hover:bg-gray-200 group-hover:text-blueIsh cursor-pointer  md:px-4 md:py-2 md:mx-0 md:bg-gradient-to-l from-blueIshSup to-blueIshLight mx-auto block w-40 md:text-white">
+                <i class="fa-solid fa-arrow-right-from-bracket font-extrabold "></i>
+                Sign in Now
+            </a>   
+
+            </div>
+
+            <div class=" w-8 relative h-6 md:hidden cursor-pointer" id="menu_btn">
+                   
+                <span id="top-bar"
+                    class="w-6 h-heighttin bg-black absolute top-0  transition-transform duration-1000 "></span>
+                <span id="mid-bar"
+                    class="w-8 h-heighttin  bg-black absolute top-[10px] opacity-100 transition-opacity duration-500  "></span>
+                <span id="bot-bar"
+                    class="w-6 h-heighttin bg-black absolute top-[20px] transition-transform duration-500 "></span>
+            </div>
+
+        </nav>
+    </header> -->
+    <!-- h-[430px] -->
+    <header class="absolute w-full bg-white lg:bg-transparent shadow-boxshadow z-50 py-6 px-4 border-b-thin border-black border-opacity-35">
+        <nav class="container mx-auto relative h-12 md:h-12 md:flex justify-between items-center overflow-hidden duration-500" id="navbar">
+            <div class="flex justify-between items-center px-4 md:px-0" >
+                <img src="../img/logo.png" alt="" >
+                <div class=" w-8 relative h-6 md:hidden cursor-pointer" id="menu_btn" >
+                   
+                    <span id="top-bar"
+                        class="w-6 h-heighttin bg-black absolute top-0  transition-transform duration-500 " ></span>
+                    <span id="mid-bar"
+                        class="w-8 h-heighttin  bg-black absolute top-[10px]  transition-opacity duration-500  "></span>
+                    <span id="bot-bar"
+                        class="w-6 h-heighttin bg-black absolute top-[20px] transition-transform duration-500"></span>
+                </div>
+            </div>
+            <div class="md:static absolute top-20 left-0 right-0  flex flex-col md:flex-row gap-6 md:gap-12 md:items-center md:justify-between border-t-thin border-black border-opacity-35 md:border-none">
+                <div class="flex flex-col text-center md:flex-row md:gap-4 lg:gap-12 bg-gray-100 md:bg-transparent">
+                       
+                    <a class="py-3.5 relative pno-underline border-b-thin group font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none  md:hover:bg-transparent "
+                    href="#home">Home<span
+                        class="absolute hidden md:block w-0 group-hover:w-14 transition-all duration-300 h-[2px] bg-blueIsh left-0 -bottom-2"></span>
+                </a>
+         
+         
+                <a class="py-3.5 relative no-underline border-b-thin group  font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                    href="#services">Service<span
+                        class="absolute hidden md:block w-0 group-hover:w-14 transition-all duration-300 h-[2px] bg-blueIsh left-0 -bottom-2"></span>
+                </a>
+           
+                <a class="py-3.5 relative no-underline border-b-thin group font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                    href="#about">About<span
+                        class="absolute hidden md:block w-0 group-hover:w-14 transition-all duration-300 h-[2px]  bg-blueIsh left-0 -bottom-2"></span>
+                </a>
+            
+                <a class="py-3.5 relative no-underline border-b-thin group font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                    href="#pricing">Pricing<span
+                        class="absolute hidden md:block w-0 group-hover:w-14 transition-all duration-300 h-[2px] bg-blueIsh left-0 -bottom-2"></span>
+                </a>
+            
+                 <a class="py-3.5 relative no-underline border-b-thin group font-semibold hover:text-blueIsh hover:bg-gray-200 md:border-none md:hover:bg-transparent"
+                    href="#newsletter">Newsletter<span
+                        class="absolute hidden md:block w-0 group-hover:w-20 transition-all duration-300 h-[2px] bg-blueIsh left-0 -bottom-2"></span>
+                </a>
+                </div>
+                <a id="signin-btn"
+                class=" py-3 text-center   text-black rounded-full bg-gray-100 transition-all  font-semibold hover:text-white hover:bg-gray-200 group-hover:text-blueIsh cursor-pointer  md:px-4 md:py-2 md:mx-0 md:bg-gradient-to-l from-blueIshSup to-blueIshLight mx-auto block w-40 md:text-white">
+                <i class="fa-solid fa-arrow-right-from-bracket font-extrabold "></i>
+                Sign in Now
+             </a> 
+            </div>
+        </nav>
+    </header>
     <!-- preview box -->
     <div id="modal"
         class="fixed left-0 right-0 top-0  h-screen bg-black bg-opacity-60 flex justify-center items-center text-center hidden z-50">
@@ -696,6 +803,7 @@
     </section>
 
     <script src="../js/script.js"></script>
+   
 </body>
 
 </html>

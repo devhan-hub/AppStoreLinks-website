@@ -1,5 +1,5 @@
 window.addEventListener('scroll', function () {
-  const header = document.querySelector('nav');
+  const header = document.querySelector('header');
   if (window.scrollY > 250) {
     header.classList.remove('lg:bg-transparent');
     header.classList.remove('absolute')
@@ -18,41 +18,60 @@ window.addEventListener('scroll', function () {
 });
 
 //  for menu
-const headertra = document.querySelector('.he-nav');
-const menu = document.querySelector('#menu_btn');
-const navhanu = document.querySelector('#nav-sign');
+
+const menub = document.querySelector('#menu_btn');
+const navhanu = document.querySelector('nav');
 const topbar = document.querySelector('#top-bar');
 const midbr = document.querySelector('#mid-bar');
 const botbar = document.querySelector('#bot-bar');
-// left-16 32 48 64 20
-function toggleMenu(isOpen) {
-  navhanu.classList.toggle('opacity-100', isOpen);
-  navhanu.classList.toggle('opacity-0', !isOpen);
-  navhanu.classList.toggle('h-[350px]', isOpen);
-  navhanu.classList.toggle('h-0', !isOpen);
-  navhanu.classList.toggle('pointer-events-none', !isOpen);
 
-  topbar.classList.toggle('w-full', isOpen);
-  topbar.classList.toggle('rotate-45', isOpen);
-  topbar.classList.toggle('w-6', !isOpen);
-  topbar.classList.toggle('translate-x-2', isOpen);
-  topbar.classList.toggle('translate-y-2.5', isOpen);
 
-  midbr.classList.toggle('opacity', isOpen);
-  midbr.classList.toggle('hidden', isOpen);
 
-  botbar.classList.toggle('w-full', isOpen);
-  botbar.classList.toggle('-rotate-45', isOpen);
-  botbar.classList.toggle('w-6', !isOpen);
-  botbar.classList.toggle('translate-x-2', isOpen);
-  botbar.classList.toggle('-translate-y-2', isOpen);
+menub.addEventListener('click', () => {
+  if (navhanu.classList.contains('h-12')) {
+    navhanu.classList.remove('h-12');
+    navhanu.classList.add('h-[420px]');
+    topbar.classList.add('w-full');
+    topbar.classList.add('rotate-45');
+    topbar.classList.remove('w-6');
+    topbar.classList.add('translate-x-2');
+    topbar.classList.add('translate-y-2.5');
 
-}
+    midbr.classList.add('opacity-0');
+    midbr.classList.add('hidden');
 
-menu.addEventListener('click', () => {
-  toggleMenu(navhanu.classList.contains('hiddene'));
-  navhanu.classList.toggle('hiddene');
+    botbar.classList.add('w-full');
+    botbar.classList.add('-rotate-45');
+    botbar.classList.remove('w-6');
+    botbar.classList.add('translate-x-2');
+    botbar.classList.add('-translate-y-2.5');
+  }
+  else {
+    navhanu.classList.add('h-12');
+    navhanu.classList.remove('h-[420px]');
+
+    topbar.classList.remove('w-full');
+    topbar.classList.remove('rotate-45');
+    topbar.classList.add('w-6');
+    topbar.classList.remove('translate-x-2');
+    topbar.classList.remove('translate-y-2.5');
+
+    midbr.classList.remove('opacity-0');
+    midbr.classList.remove('hidden');
+
+    botbar.classList.remove('w-full');
+    botbar.classList.remove('-rotate-45');
+    botbar.classList.add('w-6');
+    botbar.classList.remove('translate-x-2');
+    botbar.classList.remove('-translate-y-2.5');
+
+
+  }
 });
+// toggleMenu(navhanu.classList.contains(navhanu.classList.contains('h-12')));
+
+
+// 
 
 
 const sections = document.querySelectorAll("section");
